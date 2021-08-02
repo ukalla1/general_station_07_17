@@ -1,0 +1,197 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug  2 10:52:06 2021
+# Process ID: 4015
+# Current directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
+# Command line: vivado
+# Log file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
+# Journal file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 6412.352 ; gain = 158.289 ; free physical = 1245 ; free virtual = 6381
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Attempt to kill process failed
+
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Aug  2 11:02:29 2021] Launched synth_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/runme.log
+[Mon Aug  2 11:02:29 2021] Launched impl_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203343721A
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1435] Device xc7vx485t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7349.488 ; gain = 0.000 ; free physical = 1291 ; free virtual = 5285
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A7DC66A
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1435] Device xc7vx485t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7351.492 ; gain = 0.000 ; free physical = 1264 ; free virtual = 5261
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A7DC66A
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7372.500 ; gain = 0.000 ; free physical = 1284 ; free virtual = 5306
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203343721A
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7372.500 ; gain = 0.000 ; free physical = 1242 ; free virtual = 5278
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Aug  2 12:42:03 2021] Launched synth_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/runme.log
+[Mon Aug  2 12:42:03 2021] Launched impl_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  6 2018-23:53:53
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203343721A
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1435] Device xc7vx485t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7472.414 ; gain = 0.000 ; free physical = 2209 ; free virtual = 5084
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210203A7DC66A
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1435] Device xc7vx485t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 7472.414 ; gain = 0.000 ; free physical = 2135 ; free virtual = 5027
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+INFO: [Labtools 27-1434] Device xc7vx485t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close_project
+open_project /home/ukallakuri/hardware_design/designs/ARL_phase3_tmp/ARL_phase3/general_station_07_17/general_station_07_17.xpr
+INFO: [Project 1-313] Project file moved from '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+ipx::package_project -root_dir /home/ukallakuri/hardware_design/designs/ARL_phase3_tmp/ARL_phase3/general_station_07_17/general_station_07_17.srcs -vendor user.org -library user -taxonomy /UserIP -generated_files
+WARNING: [IP_Flow 19-4963] design_1_clk_wiz_0_0 has board value specified. The packaged IP will be restricted to usage with board 'xilinx.com:vc707:part0:1.4'
+WARNING: [IP_Flow 19-3833] Unreferenced file from the top module is not packaged: '/home/ukallakuri/hardware_design/designs/ARL_phase3_tmp/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/buff_cal_wrapper.v'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'state' has a dependency on the module local parameter or undefined parameter 'idle'.
+INFO: [IP_Flow 19-1842] HDL Parser: Found include file "sources_1/new/parameters_top.vh" from the top-level HDL file.
+INFO: [IP_Flow 19-1842] HDL Parser: Found include file "sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h" from the top-level HDL file.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'rst' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK_IN1_D_0_clk_n' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'CLK_IN1_D_0_clk_p' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK_IN1_D_0_clk_n': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-3153] Bus Interface 'CLK_IN1_D_0_clk_p': ASSOCIATED_BUSIF bus parameter is missing.
+WARNING: [IP_Flow 19-991] Unrecognized or unsupported file 'sources_1/bd/design_1/sim/design_1.protoinst' found in file group 'Simulation'.
+Resolution: Remove the file from the specified file group.
+INFO: [IP_Flow 19-2181] Payment Required is not set for this core.
+INFO: [IP_Flow 19-2187] The Product Guide file is missing.
+close_project
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  2 15:38:56 2021...

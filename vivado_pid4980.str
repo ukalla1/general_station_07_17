@@ -1,0 +1,331 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 4980
+License: Customer
+
+Current time: 	Sun Jul 25 13:15:59 EDT 2021
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Ubuntu
+OS Version: 5.4.0-80-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 66 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2018.3
+RDI_DATADIR: /tools/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: /root/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /root/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /root/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
+Vivado journal file location: 	/home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-4980-ukallakuri-Lenovo-YOGA-910-13IKB
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2018.3
+XILINX_SDK: /tools/Xilinx/SDK/2018.3
+XILINX_SDX: /tools/Xilinx/SDx/2018.3
+XILINX_VIVADO: /tools/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	187 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 818 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr", 0); // q (Q, cp)
+// [GUI Memory]: 61 MB (+61162kb) [00:00:10]
+// [Engine Memory]: 827 MB (+715934kb) [00:00:10]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 831 MB. GUI used memory: 46 MB. Current time: 7/25/21, 1:16:01 PM EDT
+// Tcl Message: open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 100 MB (+38246kb) [00:00:15]
+// [Engine Memory]: 935 MB (+69841kb) [00:00:15]
+// [GUI Memory]: 106 MB (+878kb) [00:00:16]
+// WARNING: HEventQueue.dispatchEvent() is taking  2990 ms.
+// Tcl Message: open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 6408.016 ; gain = 157.918 ; free physical = 2670 ; free virtual = 7333 
+// Project name: general_station_07_17; location: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17; part: xc7vx485tffg1761-2
+// [Engine Memory]: 1,011 MB (+30252kb) [00:00:18]
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 1,063 MB (+1714kb) [00:00:22]
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,064 MB. GUI used memory: 56 MB. Current time: 7/25/21, 1:16:21 PM EDT
+// Elapsed time: 13 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // B (D, cp)
+// [GUI Memory]: 113 MB (+1341kb) [00:00:38]
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (Q, cp)
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18); // u (Q, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report Utilization]", 26, false); // u (Q, cp)
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// [Engine Memory]: 1,359 MB (+254502kb) [00:00:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,392 MB. GUI used memory: 55 MB. Current time: 7/25/21, 1:16:41 PM EDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,028 MB. GUI used memory: 55 MB. Current time: 7/25/21, 1:16:51 PM EDT
+// [Engine Memory]: 2,029 MB (+631763kb) [00:01:01]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /tools/Xilinx/Vivado/2018.3/data/parts/xilinx/virtex7/devint/virtex7/xc7vx485t/xc7vx485t.xgd; ZipEntry: xc7vx485t_detail.xgd elapsed time: 0.9s
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 1.7s
+// [Engine Memory]: 2,202 MB (+74862kb) [00:01:03]
+// [GUI Memory]: 135 MB (+17043kb) [00:01:03]
+// Device: addNotify
+// [GUI Memory]: 147 MB (+6231kb) [00:01:04]
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// WARNING: HEventQueue.dispatchEvent() is taking  2982 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 1453 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7vx485tffg1761-2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.49 . Memory (MB): peak = 7420.766 ; gain = 13.004 ; free physical = 1536 ; free virtual = 6332 
+// Tcl Message: Restored from archive | CPU: 0.510000 secs | Memory: 11.061737 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.50 ; elapsed = 00:00:00.49 . Memory (MB): peak = 7420.766 ; gain = 13.004 ; free physical = 1536 ; free virtual = 6332 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 7420.766 ; gain = 0.000 ; free physical = 1537 ; free virtual = 6333 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 64 instances were transformed.   RAM16X1S => RAM32X1S (RAMS32): 64 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:32 ; elapsed = 00:00:23 . Memory (MB): peak = 7646.324 ; gain = 1103.133 ; free physical = 1427 ; free virtual = 6226 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 155 MB (+435kb) [00:01:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  7034 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// [GUI Memory]: 168 MB (+5850kb) [00:01:15]
+// [Engine Memory]: 2,522 MB (+220016kb) [00:01:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  1048 ms.
+// Run Command: PAResourceCommand.PACommandNames_RESOURCE_UTILIZATION
+// a (cp): Report Utilization: addNotify
+// Elapsed time: 35 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (a)
+dismissDialog("Report Utilization"); // a (cp)
+// TclEventType: UTILIZATION_RESULT_GENERATED
+// bx (cp):  Report Utilization : addNotify
+// [GUI Memory]: 177 MB (+359kb) [00:01:18]
+// Tcl Message: report_utilization -name utilization_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 2,453 MB. GUI used memory: 122 MB. Current time: 7/25/21, 1:17:10 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1429 ms.
+dismissDialog("Report Utilization"); // bx (cp)
+maximizeFrame(PAResourceOtoP.PAViews_UTILIZATION, "Utilization - utilization_1"); // ax (aI, cp)
+selectTree(PAResourceQtoS.ReportUtilTab_REPORT_UTILIZATION_NAVIGATION_TREE, "[Report Contents, Summary]", 1, false); // l (Q, cp)
+// Device view-level: 0.3
+// Elapsed time: 280 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, parameters_top.vh]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, parameters_top.vh]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 88 seconds
+selectCodeEditor("parameters_top.vh", 165, 89); // cl (w, cp)
+selectCodeEditor("parameters_top.vh", 183, 99); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // B (D, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,506 MB. GUI used memory: 124 MB. Current time: 7/25/21, 1:23:31 PM EDT
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 11); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 10); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, vc707.xdc]", 12, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_1, vc707.xdc]", 12, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("vc707.xdc", 379, 302); // cl (w, cp)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 37 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Device", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parameters_top.vh", 2); // k (j, cp)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("Implementation", "Implemented Design", "DesignTask.RESULTS_ANALYSIS");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,407 MB. GUI used memory: 93 MB. Current time: 7/25/21, 1:24:19 PM EDT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 2,407 MB. GUI used memory: 94 MB. Current time: 7/25/21, 1:24:19 PM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1366 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bx (cp):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Sun Jul 25 13:24:28 2021] Launched synth_1... Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/runme.log [Sun Jul 25 13:24:28 2021] Launched impl_1... Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (cp)
+selectButton(PAResourceItoN.MsgView_CLEAR_MESSAGES_RESULTING_FROM_USER_EXECUTED, "Messages_cleanUpMessages"); // B (f, cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Implementation Completed: addNotify
+// Elapsed time: 464 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Implementation Completed"); // ah (cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parameters_top.vh", 1); // k (j, cp)
+selectCheckBox(PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String) null, false); // g (aR, cp): FALSE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_IMPLEMENTATION_TIMING, "Run Post-Implementation Timing Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_IMPLEMENTATION_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e (cp):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-implementation -type timing 
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching post-implementation timing simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/timing/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,301 MB. GUI used memory: 65 MB. Current time: 7/25/21, 1:32:34 PM EDT
+// Xgd.load filename: /tools/Xilinx/Vivado/2018.3/data/parts/xilinx/virtex7/devint/virtex7/xc7vx485t/xc7vx485t.xgd; ZipEntry: xc7vx485t_detail.xgd elapsed time: 0.5s
+// TclEventType: DESIGN_NEW
+// Device: addNotify
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1056 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 3187 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 7707.344 ; gain = 0.000 ; free physical = 1668 ; free virtual = 4636 
+// Tcl Message: Restored from archive | CPU: 1.270000 secs | Memory: 26.631989 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 7707.344 ; gain = 0.000 ; free physical = 1668 ; free virtual = 4636 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7707.344 ; gain = 0.000 ; free physical = 1668 ; free virtual = 4638 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 64 instances were transformed.   RAM16X1S => RAM32X1S (RAMS32): 64 instances  
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 7789.777 ; gain = 82.434 ; free physical = 1783 ; free virtual = 4760 
+// Tcl Message: INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'... INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/timing/xsim/design_top_temp_tb_time_impl.v" 
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.1s
+// Device view-level: 0.0
+// Tcl Message: INFO: [SIM-utils-34] Writing SDF file... INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/timing/xsim/design_top_temp_tb_time_impl.sdf" 
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: write_sdf: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 7809.312 ; gain = 1.199 ; free physical = 1649 ; free virtual = 4674 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module sp_ram_sim INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module top_mmcme2 INFO: [VRFC 10-311] analyzing module uart_tx_wrapper INFO: [VRFC 10-311] analyzing module uart_txm_ex INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module design_top_temp_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/timing/xsim' 
+// Tcl Message: Vivado Simulator 2018.3 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot design_top_temp_tb_time_impl -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log  Using 8 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Elapsed time: 582 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (e)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// Tcl Message: run_program: Time (s): cpu = 00:00:15 ; elapsed = 00:09:19 . Memory (MB): peak = 7816.324 ; gain = 7.012 ; free physical = 1434 ; free virtual = 4739 
+// Tcl Message: INFO: [Common 17-344] 'run_program' was cancelled INFO: [Vivado 12-5357] 'elaborate' step aborted 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:51 ; elapsed = 00:09:47 . Memory (MB): peak = 7816.324 ; gain = 108.980 ; free physical = 1433 ; free virtual = 4739 
+// Tcl Message: INFO: [Common 17-344] 'launch_simulation' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+// 'd' command handler elapsed time: 586 seconds
+// HMemoryUtils.trashcanNow. Engine heap size: 2,513 MB. GUI used memory: 99 MB. Current time: 7/25/21, 1:42:15 PM EDT
+dismissDialog("Run Simulation"); // e (cp)
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Settings]", 1, false); // u (Q, cp)
+// Run Command: RDIResourceCommand.RDICommands_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1880 ms.
+selectTree(PAResourceQtoS.SettingsDialog_PROJECT_TREE, "[projectRoot, Simulation]", 1, false); // L (C, F)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, "Simulation", 2); // i (Q, F)
+// HMemoryUtils.trashcanNow. Engine heap size: 2,646 MB. GUI used memory: 126 MB. Current time: 7/25/21, 1:43:21 PM EDT
+selectButton(RDIResource.BaseDialog_APPLY, "Apply"); // a (F)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property -name {xsim.simulate.saif} -value {phase3_slave.saif} -objects [get_filesets sim_1] 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Settings"); // F (cp)
+// [Engine Memory]: 2,728 MB (+83363kb) [00:27:35]
+// [GUI Memory]: 191 MB (+4893kb) [00:27:35]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_IMPLEMENTATION_TIMING, "Run Post-Implementation Timing Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_IMPLEMENTATION_TIMING
+// TclEventType: FILE_SET_CHANGE
+// e (cp):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-implementation -type timing 
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching post-implementation timing simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/timing/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'... INFO: [SIM-utils-32] write_verilog -mode timesim -nolib -sdf_anno true -force -file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/timing/xsim/design_top_temp_tb_time_impl.v" 
+// Tcl Message: INFO: [SIM-utils-34] Writing SDF file... INFO: [SIM-utils-35] write_sdf -mode timesim -process_corner slow -force -file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/timing/xsim/design_top_temp_tb_time_impl.sdf" 

@@ -1,0 +1,1340 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:36:41 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 222455
+License: Customer
+
+Current time: 	Sat Jul 31 10:53:12 EDT 2021
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Ubuntu
+OS Version: 5.4.0-80-generic
+OS Architecture: amd64
+Available processors (cores): 4
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 60 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2018.3/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	root
+User home directory: /root
+User working directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2018.3
+RDI_DATADIR: /tools/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: /root/.Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: /root/.Xilinx/Vivado/2018.3/
+Vivado layouts directory: /root/.Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	/home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
+Vivado journal file location: 	/home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-222455-ukallakuri-Lenovo-YOGA-910-13IKB
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2018.3
+XILINX_SDK: /tools/Xilinx/SDK/2018.3
+XILINX_SDX: /tools/Xilinx/SDx/2018.3
+XILINX_VIVADO: /tools/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 800 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// HMemoryUtils.trashcanNow. Engine heap size: 798 MB. GUI used memory: 44 MB. Current time: 7/31/21, 10:53:14 AM EDT
+selectList(PAResourceQtoS.SyntheticaGettingStartedView_RECENT_PROJECTS, "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr", 0); // q (Q, cp)
+// [GUI Memory]: 71 MB (+72062kb) [00:00:12]
+// [Engine Memory]: 800 MB (+687823kb) [00:00:12]
+// Opening Vivado Project: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr. Version: Vivado v2018.3 
+// bx (cp):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 93 MB (+19070kb) [00:00:17]
+// [Engine Memory]: 920 MB (+83465kb) [00:00:17]
+// [GUI Memory]: 102 MB (+5162kb) [00:00:18]
+// WARNING: HEventQueue.dispatchEvent() is taking  2917 ms.
+// Tcl Message: open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 6405.316 ; gain = 149.887 ; free physical = 2169 ; free virtual = 3690 
+// Project name: general_station_07_17; location: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17; part: xc7vx485tffg1761-2
+// [GUI Memory]: 113 MB (+5760kb) [00:00:20]
+// [Engine Memory]: 997 MB (+32222kb) [00:00:20]
+dismissDialog("Open Project"); // bx (cp)
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,046 MB. GUI used memory: 55 MB. Current time: 7/31/21, 10:53:29 AM EDT
+// [Engine Memory]: 1,048 MB (+1090kb) [00:00:28]
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_IMPLEMENTATION_FUNCTIONAL, "Run Post-Implementation Functional Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_POST_IMPLEMENTATION_FUNCTIONAL
+// TclEventType: FILE_SET_CHANGE
+// e (cp):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -mode post-implementation -type functional 
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,340 MB. GUI used memory: 56 MB. Current time: 7/31/21, 10:53:49 AM EDT
+// [Engine Memory]: 1,474 MB (+392039kb) [00:00:52]
+// WARNING: HEventQueue.dispatchEvent() is taking  1157 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,547 MB. GUI used memory: 56 MB. Current time: 7/31/21, 10:54:05 AM EDT
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 2,076 MB. GUI used memory: 56 MB. Current time: 7/31/21, 10:54:11 AM EDT
+// [Engine Memory]: 2,076 MB (+553595kb) [00:01:08]
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /tools/Xilinx/Vivado/2018.3/data/parts/xilinx/virtex7/devint/virtex7/xc7vx485t/xc7vx485t.xgd; ZipEntry: xc7vx485t_detail.xgd elapsed time: 1.2s
+// [GUI Memory]: 124 MB (+5687kb) [00:01:10]
+// [Engine Memory]: 2,293 MB (+119192kb) [00:01:10]
+// [GUI Memory]: 139 MB (+9488kb) [00:01:11]
+// Device: addNotify
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// RouteApi::loadEngineXgd elapsed time: 3.6s
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  2992 ms.
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 3282 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7vx485tffg1761-2 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 7473.703 ; gain = 31.676 ; free physical = 955 ; free virtual = 2612 
+// Tcl Message: Restored from archive | CPU: 1.240000 secs | Memory: 27.154999 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 7473.703 ; gain = 31.676 ; free physical = 955 ; free virtual = 2612 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7473.703 ; gain = 0.000 ; free physical = 957 ; free virtual = 2615 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 64 instances were transformed.   RAM16X1S => RAM32X1S (RAMS32): 64 instances  
+// WARNING: HEventQueue.dispatchEvent() is taking  1055 ms.
+// RouteApi::initDelayMediator elapsed time: 1.5s
+// Device view-level: 0.0
+// WARNING: HEventQueue.dispatchEvent() is taking  4498 ms.
+// Tcl Message: open_run: Time (s): cpu = 00:00:57 ; elapsed = 00:00:39 . Memory (MB): peak = 7700.402 ; gain = 1192.988 ; free physical = 795 ; free virtual = 2465 
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'... INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v" 
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [SIM-utils-36] Netlist generated:/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim' 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [VRFC 10-311] analyzing module sp_ram_sim INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module top_mmcme2 INFO: [VRFC 10-311] analyzing module uart_tx_wrapper INFO: [VRFC 10-311] analyzing module uart_txm_ex INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module design_top_temp_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim' 
+// Tcl Message: Vivado Simulator 2018.3 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_top_temp_tb_func_impl xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log  Using 8 slave threads. Starting static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Time Resolution for simulation is 1ps Compiling module unisims_ver.OBUF Compiling module unisims_ver.ODDR Compiling module unisims_ver.LUT4 Compiling module unisims_ver.FDRE_default Compiling module unisims_ver.CARRY4 Compiling module unisims_ver.x_lut2_mux4 Compiling module unisims_ver.LUT2 Compiling module unisims_ver.x_lut3_mux8 Compiling module unisims_ver.LUT3 Compiling module unisims_ver.x_lut1_mux2 Compiling module unisims_ver.LUT1 Compiling module unisims_ver.LUT5 Compiling module xil_defaultlib.debounce_logic__parameterized0 Compiling module unisims_ver.BUFG Compiling module unisims_ver.LUT6 Compiling module unisims_ver.FDSE_default 
+// Tcl Message: Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,... Compiling module unisims_ver.MUXF7 
+// Tcl Message: Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,... Compiling module xil_defaultlib.reg_b 
+// WARNING: HTimer (StateMonitor Timer) is taking 10555ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4623 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 3608 ms. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 211ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4825 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 14358 ms. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9296 ms. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  21515 ms.
+// Tcl Message: Compiling module xil_defaultlib.mmcm_drp_rcf_0628 
+// WARNING: HEventQueue.dispatchEvent() is taking  4025 ms.
+// Tcl Message: Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,... 
+// WARNING: HTimer (StateMonitor Timer) is taking 1118ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1118 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1471 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 25867 ms. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  49940 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 13002 ms. Increasing delay to 7000 ms.
+// Tcl Message: Compiling module unisims_ver.FDCE_default Compiling module unisims_ver.FDPE_default Compiling module xil_defaultlib.top_mmcme2 Compiling module unisims_ver.IBUF Compiling module unisims_ver.IBUFDS Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,... 
+// WARNING: HEventQueue.dispatchEvent() is taking  8339 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7507 ms. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1135 ms.
+// WARNING: HTimer (a Update Status Timer) is taking 568ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 501ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (a Update Status Timer) is taking 447ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 14324ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  14613 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 9718ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9776 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 23229 ms. Increasing delay to 9000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 3492ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3492 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9669 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1160ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1160 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7804 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (a Update Status Timer) is taking 3593ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3597 ms.
+// Tcl Message: Built simulation snapshot design_top_temp_tb_func_impl 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: run_program: Time (s): cpu = 00:02:02 ; elapsed = 00:03:51 . Memory (MB): peak = 7700.402 ; gain = 0.000 ; free physical = 1979 ; free virtual = 2526 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '232' seconds INFO: [USF-XSim-4] XSim::Simulate design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "design_top_temp_tb_func_impl -key {Post-Implementation:sim_1:Functional:design_top_temp_tb} -tclbatch {design_top_temp_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Vivado Simulator 2018.3 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst 
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 286 seconds
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// Waveform: addNotify
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,383 MB. GUI used memory: 106 MB. Current time: 7/31/21, 10:58:21 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// Tcl Message: source design_top_temp_tb.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,384 MB. GUI used memory: 100 MB. Current time: 7/31/21, 10:58:22 AM EDT
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_OBJECT_TREE_RESTORED
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_top_temp_tb_func_impl' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:03:31 ; elapsed = 00:04:48 . Memory (MB): peak = 7732.582 ; gain = 1225.168 ; free physical = 1353 ; free virtual = 2351 
+// 'd' command handler elapsed time: 288 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// [Engine Memory]: 2,410 MB (+2506kb) [00:05:20]
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// [GUI Memory]: 147 MB (+119kb) [00:05:23]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,424 MB. GUI used memory: 99 MB. Current time: 7/31/21, 10:58:26 AM EDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, period_100M[31:0]]", 15, true); // a (r, cp) - Node
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, uart_tx_ready]", 14, false); // a (r, cp)
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, diff_clk_0_clk_p]", 21, false, true, false, false, false, false); // a (r, cp) - Shift Key
+// HMemoryUtils.trashcanNow. Engine heap size: 2,425 MB. GUI used memory: 100 MB. Current time: 7/31/21, 10:58:29 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, LED_OUT[63:0]]", 11, true); // a (r, cp) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,426 MB. GUI used memory: 99 MB. Current time: 7/31/21, 10:58:32 AM EDT
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, s_rx_err]", 10, false); // a (r, cp)
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// [GUI Memory]: 157 MB (+3227kb) [00:05:30]
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectTree(RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, "[true, diff_clk_test_period[31:0]]", 4, true); // a (r, cp) - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,426 MB. GUI used memory: 99 MB. Current time: 7/31/21, 10:58:34 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV, (String) null); // B (E, cp)
+// Run Command: PAResourceCommand.PACommandNames_TOGGLE_VIEW_NAV
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,590 MB. GUI used memory: -53 MB. Current time: 7/31/21, 10:58:37 AM EDT
+// [Engine Memory]: 2,590 MB (+62232kb) [00:05:35]
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "uut ; top ; Verilog Module", 1, "uut", 0, true); // d (Q, cp) - Node
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "uut ; top ; Verilog Module", 1); // d (Q, cp)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "top_sub1 ; design_top_temp ; Verilog Module", 5, "top_sub1", 0, true); // d (Q, cp) - Node
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "top_sub1 ; design_top_temp ; Verilog Module", 5); // d (Q, cp)
+expandTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "dbuff ; buff_cal_wrapper ; Verilog Module", 6); // d (Q, cp)
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "dbuff ; sp_ram_sim ; Verilog Module", 7, "dbuff", 0, false); // d (Q, cp)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 12 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "data_in[63:0] ; 0000000000000000 ; Array", 3, "data_in[63:0]", 0, true); // m (c, cp) - Node
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// Elapsed time: 10 seconds
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "dbuff ; buff_cal_wrapper ; Verilog Module", 6, "dbuff", 0, true); // d (Q, cp) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "dbuff ; sp_ram_sim ; Verilog Module", 7, "dbuff", 0, false); // d (Q, cp)
+// Elapsed time: 16 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "data_out[63:0] ; 0000000000000000 ; Array", 0, "data_out[63:0]", 0, true); // m (c, cp) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "E[0:0] ; 0 ; Array", 1, "E[0:0]", 0, true, false, true, false, false, false); // m (c, cp) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "addrs[3:0] ; 0 ; Array", 2, "addrs[3:0]", 0, true, false, true, false, false, false); // m (c, cp) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "data_in[63:0] ; 0000000000000000 ; Array", 3, "data_in[63:0]", 0, true, false, true, false, false, false); // m (c, cp) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "mem_out[63:0] ; 0000000000000000 ; Array", 7, "mem_out[63:0]", 0, true, false, true, false, false, false); // m (c, cp) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "data_out[63:0] ; 0000000000000000 ; Array", 0, "data_out[63:0]", 0, true); // m (c, cp) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+maximizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ax (aI, cp)
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Waveform: addNotify
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,600 MB. GUI used memory: 117 MB. Current time: 7/31/21, 10:59:51 AM EDT
+unMinimizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ax
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+selectTreeTable(PAResourceQtoS.SimulationScopesPanel_SIMULATE_SCOPE_TABLE, "top_sub1 ; design_top_temp ; Verilog Module", 5, "top_sub1", 0, true); // d (Q, cp) - Node
+selectButton(RDIResource.AbstractSearchablePanel_SHOW_SEARCH, "Objects_search"); // u (f, cp): TRUE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+setText("PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE_SEARCH_FIELD", "ts_co"); // OverlayTextField (ay, cp)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "ts_count_internal[63:0] ; 0000000000000000 ; Array", 1, "ts_count_internal[63:0]", 0, true); // m (c, cp) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,601 MB. GUI used memory: 129 MB. Current time: 7/31/21, 11:00:04 AM EDT
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,601 MB. GUI used memory: 132 MB. Current time: 7/31/21, 11:00:08 AM EDT
+unMinimizeFrame(PAResourceOtoP.PAViews_OBJECTS, "Objects"); // ax
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+unMinimizeFrame(PAResourceOtoP.PAViews_SCOPE, "Scopes"); // ax
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// HMemoryUtils.trashcanNow. Engine heap size: 2,601 MB. GUI used memory: 113 MB. Current time: 7/31/21, 11:00:11 AM EDT
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// [GUI Memory]: 166 MB (+1230kb) [00:07:11]
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+setText("PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE_SEARCH_FIELD", "dbuf"); // OverlayTextField (ay, cp)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "dbuff_mem_en ; 0 ; Logic", 19, "dbuff_mem_en", 0, false); // m (c, cp)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "dbuff_mem_wea ; 0 ; Logic", 22, "dbuff_mem_wea", 0, false, false, true, false, false, false); // m (c, cp) - Control Key
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "dbuff_mem_addra[3:0] ; 0 ; Array", 0, "dbuff_mem_addra[3:0]", 0, true, false, true, false, false, false); // m (c, cp) - Control Key - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "dbuff_mem_addra[3:0] ; 0 ; Array", 0, "dbuff_mem_addra[3:0]", 0, true); // m (c, cp) - Node
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// HMemoryUtils.trashcanNow. Engine heap size: 2,603 MB. GUI used memory: 124 MB. Current time: 7/31/21, 11:00:34 AM EDT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, "simulation_relaunch"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH
+// b (cp):  Relaunch Simulation : addNotify
+// TclEventType: SIMULATION_MODEL_ABOUT_TO_CLOSE
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Tcl Message: relaunch_sim 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_MODEL_RELOADED
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: SIMULATION_UPDATE_STACKS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_CURRENT_STACK_CHANGED
+// TclEventType: SIMULATION_UPDATE_STACK_FRAMES
+// TclEventType: SIMULATION_CURRENT_STACK_FRAME_CHANGED
+// TclEventType: SIMULATION_UPDATE_LOCALS
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'... INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v" 
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: LAUNCH_SIM
+// Tcl Message: INFO: [VRFC 10-311] analyzing module sp_ram_sim INFO: [VRFC 10-311] analyzing module top INFO: [VRFC 10-311] analyzing module top_mmcme2 INFO: [VRFC 10-311] analyzing module uart_tx_wrapper INFO: [VRFC 10-311] analyzing module uart_txm_ex INFO: [VRFC 10-311] analyzing module glbl INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib INFO: [VRFC 10-311] analyzing module design_top_temp_tb 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '2' seconds INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator... INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim' INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim' 
+// Tcl Message: Vivado Simulator 2018.3 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_top_temp_tb_func_impl xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log  Using 8 slave threads. Starting static elaboration 
+// Tcl Message: Completed static elaboration 
+// Tcl Message: Starting simulation data flow analysis 
+// Tcl Message: Completed simulation data flow analysis 
+// Tcl Message: Time Resolution for simulation is 1ps Compiling module unisims_ver.OBUF Compiling module unisims_ver.ODDR Compiling module unisims_ver.LUT4 Compiling module unisims_ver.FDRE_default Compiling module unisims_ver.CARRY4 Compiling module unisims_ver.x_lut2_mux4 Compiling module unisims_ver.LUT2 Compiling module unisims_ver.x_lut3_mux8 Compiling module unisims_ver.LUT3 Compiling module unisims_ver.x_lut1_mux2 Compiling module unisims_ver.LUT1 Compiling module unisims_ver.LUT5 Compiling module xil_defaultlib.debounce_logic__parameterized0 Compiling module unisims_ver.BUFG Compiling module unisims_ver.LUT6 Compiling module unisims_ver.FDSE_default 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 294ms to process. Increasing delay to 2000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1621 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7602 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 514ms to process. Increasing delay to 3000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 9818ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9818 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6426 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,... 
+// Tcl Message: Compiling module unisims_ver.MUXF7 
+// WARNING: HEventQueue.dispatchEvent() is taking  1486 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7665 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6338 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,... 
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 679ms to process. Increasing delay to 4000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1978 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6813 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1675ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1675 ms.
+// Tcl Message: Compiling module xil_defaultlib.reg_b 
+// WARNING: HEventQueue.dispatchEvent() is taking  8713 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5601 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  14215 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8938 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3057 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6178 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1065 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1230 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1061 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9542 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 2070ms to process. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2070 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8442 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module xil_defaultlib.mmcm_drp_rcf_0628 
+// WARNING: HEventQueue.dispatchEvent() is taking  3306 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5850 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1945 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 2261ms to process. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2262 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 1043ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1043 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10438 ms.
+// Tcl Message: Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,... 
+// WARNING: HEventQueue.dispatchEvent() is taking  1902 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6264 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1155 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1626 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 10388ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10388 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 17916ms to process. Increasing delay to 11000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  17926 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21842 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1107 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 3849ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4052 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6691 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 2883ms to process. Increasing delay to 12000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3176 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2730 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 7830ms to process. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8009 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2355 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21606 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1768 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 12397ms to process. Increasing delay to 13000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12493 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6898 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1945 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6319 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3302 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1032 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1148 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5604 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2122 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7179 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1402 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8133 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6097 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2223 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1207 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 15984 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module unisims_ver.FDCE_default 
+// Tcl Message: Compiling module unisims_ver.FDPE_default 
+// Tcl Message: Compiling module xil_defaultlib.top_mmcme2 
+// WARNING: HEventQueue.dispatchEvent() is taking  3477 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5700 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1013 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1861 ms.
+// Tcl Message: Compiling module unisims_ver.IBUF 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8741 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module unisims_ver.IBUFDS 
+// Tcl Message: Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,... 
+// WARNING: HEventQueue.dispatchEvent() is taking  6082 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4098 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8329 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 18599ms to process. Increasing delay to 14000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  18611 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7770 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8462 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1718 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6469 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module xil_defaultlib.design_1_clk_wiz_0_0_design_1_cl... 
+// WARNING: HEventQueue.dispatchEvent() is taking  9913 ms.
+// Tcl Message: Compiling module xil_defaultlib.design_1_clk_wiz_0_0 
+// WARNING: HEventQueue.dispatchEvent() is taking  10260 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 22018 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1008 ms.
+// Tcl Message: Compiling module xil_defaultlib.design_1 
+// Tcl Message: Compiling module xil_defaultlib.design_1_wrapper 
+// WARNING: HEventQueue.dispatchEvent() is taking  9728 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7095 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1642 ms.
+// Tcl Message: Compiling module unisims_ver.RAM32X1S 
+// WARNING: HEventQueue.dispatchEvent() is taking  4306 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5005 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1141 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8685 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2743 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10487 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2224 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6911 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5725 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4470 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1133 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 3742ms to process. Increasing delay to 15000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3743 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6085 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9802 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1020 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1967 ms.
+// Tcl Message: Compiling module xil_defaultlib.sp_ram_sim 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 18117 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13136 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1034 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 15093ms to process. Increasing delay to 16000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15100 ms.
+// Tcl Message: Compiling module xil_defaultlib.buff_cal_wrapper 
+// WARNING: HEventQueue.dispatchEvent() is taking  3540 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6000 ms.
+// WARNING: HTimer (HMemoryUtils Timer) is taking 1101ms to process. Increasing delay to 6000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1102 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 36134 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1602 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1403 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1199 ms.
+// Tcl Message: Compiling module xil_defaultlib.manchester_rx_m 
+// WARNING: HEventQueue.dispatchEvent() is taking  9782 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1309 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1086 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 26079 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 15776ms to process. Increasing delay to 17000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15778 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 2255ms to process. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2356 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7931 ms.
+// Tcl Message: Compiling module xil_defaultlib.manchester_rx_top 
+// WARNING: HEventQueue.dispatchEvent() is taking  1043 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1368 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5998 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3421 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 19447 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1476 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1911 ms.
+// Tcl Message: Compiling module xil_defaultlib.cntr_tst 
+// WARNING: HEventQueue.dispatchEvent() is taking  11034 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1357 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11024 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2775 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7065 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2336 ms.
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 487ms to process. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1132 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5479 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1263 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9928 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1039 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1079 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2708 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 6620ms to process. Increasing delay to 11000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8533 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 20593 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module unisims_ver.FDRE(INIT=1'b1) 
+// Tcl Message: Compiling module xil_defaultlib.manchester_tx_m 
+// WARNING: HEventQueue.dispatchEvent() is taking  9927 ms.
+// Tcl Message: Compiling module xil_defaultlib.manchester_tx_top 
+// WARNING: HEventQueue.dispatchEvent() is taking  1308 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6462 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module xil_defaultlib.uart_txm_ex 
+// WARNING: HTimer (HMemoryUtils Timer) is taking 9336ms to process. Increasing delay to 7000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9414 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1165 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11776 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10203 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 11378ms to process. Increasing delay to 18000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11388 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 14597 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module xil_defaultlib.uart_tx_wrapper 
+// WARNING: HEventQueue.dispatchEvent() is taking  1900 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1657 ms.
+// Tcl Message: Compiling module xil_defaultlib.design_top_temp 
+// WARNING: HEventQueue.dispatchEvent() is taking  11226 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1336 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 4080ms to process. Increasing delay to 19000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4103 ms.
+// WARNING: HTimer (HMemoryUtils Timer) is taking 5888ms to process. Increasing delay to 8000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9274 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21793 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1424 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 16778ms to process. Increasing delay to 20000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  16929 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1551 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1514 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  23299 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3462 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1027 ms.
+// Tcl Message: Compiling module xil_defaultlib.top 
+// WARNING: HEventQueue.dispatchEvent() is taking  2226 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 58910 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 24195ms to process. Increasing delay to 21000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  24373 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8624 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1254 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1179 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 12148ms to process. Increasing delay to 12000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12174 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1388 ms.
+// Tcl Message: Compiling module xil_defaultlib.design_top_temp_tb 
+// WARNING: HEventQueue.dispatchEvent() is taking  2252 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 38305 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 16375ms to process. Increasing delay to 22000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  16498 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7072 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11942 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1434 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 5736ms to process. Increasing delay to 23000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5770 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1601 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5130 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9899 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5739 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 29258ms to process. Increasing delay to 24000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  29258 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5553 ms. Increasing delay to 10000 ms.
+// Tcl Message: Compiling module xil_defaultlib.glbl 
+// WARNING: HEventQueue.dispatchEvent() is taking  1056 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10133 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1967 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1744 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10921 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4150 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6430 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1548 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1090 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5654 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9193 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1843 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1357 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6033 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1250 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2534 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10960 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1685 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8717 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1651 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1551 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2538 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8020 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9780 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  40331 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1325 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 40555 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1455 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4744 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7701 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1456 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7733 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9670 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2230 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6036 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7517 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2340 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1138 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1874 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9889 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3595 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8294 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10410 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1253 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5573 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10934 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2039 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6239 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9917 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1174 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3461 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10175 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1072 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7674 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2160 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3854 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3446 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2297 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3502 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3567 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 698ms to process. Increasing delay to 4000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7026 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2694 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4810 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1767 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5021 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4839 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1105 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5473 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4567 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2526 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1666 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 31382 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1142 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4154 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2123 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1557 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5467 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1291 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5151 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1475 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1905 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8550 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1120 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1119 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1092 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 48304 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1690 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2031 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 10620ms to process. Increasing delay to 25000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5182 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 3871ms to process. Increasing delay to 13000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4541 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11347 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1321 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 26629 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1270 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9069 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1453 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9538 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1580 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11178 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3078 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10176 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7658 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1813 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7125 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3744 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8482 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6920 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4248 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1189 ms.
+// WARNING: HTimer (HMemoryUtils Timer) is taking 2312ms to process. Increasing delay to 9000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9067 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2377 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7195 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1275 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3478 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5840 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1580 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1121 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3233 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6024 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1722 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7385 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5019 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4114 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1763 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1054 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5451 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1277 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2632 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6862 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1589 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1190 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9748 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 19562 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2583 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10579 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1352 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10670 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9208 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1648 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1138 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1007 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2260 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6935 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9033 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3883 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6062 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1612 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3305 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7101 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1587 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2105 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5816 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3974 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1599 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11309 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 13228ms to process. Increasing delay to 26000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13258 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1003 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1089 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 28167 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2082 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,583 MB. GUI used memory: 164 MB. Current time: 7/31/21, 11:30:59 AM EDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2543 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1728 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9435 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1232 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1311 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3299 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5915 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 20650 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1217 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1850 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1071 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7691 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9808 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10088 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2466 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1174 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8244 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7526 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1967 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1101 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1382 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1038 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2734 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6579 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 17151 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2966 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1215 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7831 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3588 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10446 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6636 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8591 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1577 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3055 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1830 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5588 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5527 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2880 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5181 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 5640ms to process. Increasing delay to 14000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11554 ms.
+// WARNING: HTimer (MainWindowUtils Timer) is taking 7438ms to process. Increasing delay to 11000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13265 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1414 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2120 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 68422 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 9146ms to process. Increasing delay to 27000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  14361 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1088 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1460 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1837 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1993 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2205 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1159 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2959 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 5927ms to process. Increasing delay to 28000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6246 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8264 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 3171ms to process. Increasing delay to 15000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3172 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 25357 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9739 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7014 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9473 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7018 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6040 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3474 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7687 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1371 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8313 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3530 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5249 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6717 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9870 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1272 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7393 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8834 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7048 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6765 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3119 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1580 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3913 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5364 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8440 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2638 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6572 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1252 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5384 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1960 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8121 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6505 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4683 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4694 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1969 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5113 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1081 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9188 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1422 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8253 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10614 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 17651ms to process. Increasing delay to 29000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  17860 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1291 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 23178 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11308 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1560 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10107 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1736 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2426 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6880 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 18554 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3711 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8213 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1378 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1410 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1202 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9656 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9862 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1466 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1341 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1552 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7274 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1795 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1280 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9063 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1058 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4747 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5850 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 13924ms to process. Increasing delay to 30000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15015 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1032 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12294 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 36997 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4334 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5088 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13569 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3137 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6297 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1447 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2883 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8169 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2432 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 18485 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2714 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6587 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1383 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7589 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1362 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10020 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1555 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1245 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11014 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21365 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 12947ms to process. Increasing delay to 31000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13160 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1704 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1541 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 10245 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9546 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1098 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2600 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9265 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1023 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9368 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1350 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3315 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9579 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4092 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5125 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5701 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9617 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1603 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1054 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10177 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1457 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2515 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6770 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1041 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21004 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1038 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2005 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 6373ms to process. Increasing delay to 32000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7066 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3664 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7457 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1383 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1085 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6675 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2497 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1588 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5018 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1432 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3535 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5730 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1443 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1445 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7368 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2144 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7152 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1019 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1071 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1077 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6449 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3338 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6141 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1520 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3498 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5737 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 18784 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2054 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12684 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1651 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8912 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2924 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6315 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6411 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1495 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3665 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5579 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1581 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2114 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1110 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9525 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 17782 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7167 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2052 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1285 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11529 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5065 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4228 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1492 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1465 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1546 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9504 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1243 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7216 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3675 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5822 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3112 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6171 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1154 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8922 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6909 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3153 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1791 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9208 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2275 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7526 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10258 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1116 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3066 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 9948 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  10498 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9804 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 14920 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1837 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3584 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5584 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2078 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1205 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8863 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1051 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2187 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8140 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1283 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7274 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 12253ms to process. Increasing delay to 33000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12300 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1021 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6890 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2485 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1433 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7855 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1253 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6631 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4051 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1254 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6701 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3357 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5991 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1803 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5825 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3774 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5459 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1672 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6157 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7217 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2123 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5100 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5435 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4049 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6495 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2744 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6157 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2439 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7045 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7434 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9804 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1167 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9444 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1627 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1027 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2313 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3807 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5536 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1351 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7573 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8568 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6146 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3287 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1096 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8374 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6749 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7792 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1284 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5298 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6328 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2945 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6857 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3216 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6670 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6885 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6572 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2865 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1137 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5768 ms. Increasing delay to 10000 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7275 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 30272ms to process. Increasing delay to 34000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  30272 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 11327ms to process. Increasing delay to 35000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11327 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9724 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 8387 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3775 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5415 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2433 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5301 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3178 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6144 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1825 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7364 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1736 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3142 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6588 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1423 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1069 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 6962 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 12765ms to process. Increasing delay to 36000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12766 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2267 ms.
+// WARNING: HTimer (h Repaint Timer) is taking 16616ms to process. Increasing delay to 31000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2076 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7692 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 70760 ms. Increasing delay to 10000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 2,497 MB. GUI used memory: 95 MB. Current time: 7/31/21, 12:01:15 PM EDT
+// WARNING: HTimer (StateMonitor Timer) is taking 35858ms to process. Increasing delay to 37000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1270 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1358 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2389 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3393 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3415 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 11998 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2211 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3865 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2577 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2736 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6481 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7698 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2376 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7034 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7066 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1561 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9437 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1020 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 7303 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1871 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7493 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1713 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3055 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4719 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7275 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21673 ms. Increasing delay to 10000 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 15113ms to process. Increasing delay to 38000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  15189 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1458 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2089 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 3463ms to process. Increasing delay to 16000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11347 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 21242 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2005 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 17056ms to process. Increasing delay to 39000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  17063 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1219 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  12372 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1336 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 25618 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1677 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5223 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  6429 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1118 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2984 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2168 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8329 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 18432 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3333 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2497 ms.
+// WARNING: HTimer (MainWindowUtils Timer) is taking 2472ms to process. Increasing delay to 12000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2661 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 15364ms to process. Increasing delay to 40000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  23753 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1104 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 42299 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  14785 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1426 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 9295ms to process. Increasing delay to 17000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9431 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4892 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 17565ms to process. Increasing delay to 41000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  18152 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  16139 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1046 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8625 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 62481 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3137 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1197 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1898 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3210 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  14026 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1007 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 19078ms to process. Increasing delay to 42000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  19094 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 40800 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8529 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3893 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1681 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5778 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7408 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3979 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 20755ms to process. Increasing delay to 43000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  20804 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5133 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5692 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3265 ms.
+// WARNING: HTimer (HMemoryUtils Timer) is taking 12441ms to process. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13033 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 8184ms to process. Increasing delay to 18000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  9638 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7116 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  7936 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  8854 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 113961 ms. Increasing delay to 10000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2682 ms.
+// WARNING: HTimer (StateMonitor Timer) is taking 44815ms to process. Increasing delay to 44000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  17973 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  3482 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  4536 ms.
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 19610ms to process. Increasing delay to 19000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  27015 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  49492 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  13260 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  5793 ms.

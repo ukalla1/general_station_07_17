@@ -1,0 +1,1407 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top top -part xc7vx485tffg1761-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17888 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1435.691 ; gain = 88.000 ; free physical = 882 ; free virtual = 4970
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:24]
+	Parameter phase bound to: 360000 - type: integer 
+	Parameter phase_sel bound to: 5'b00000 
+	Parameter divide bound to: 12 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter s1 bound to: 2'b01 
+	Parameter s2 bound to: 2'b10 
+	Parameter s3 bound to: 2'b11 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:49]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:56]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:59]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:60]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:62]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:66]
+INFO: [Synth 8-5534] Detected attribute (* gated_clock = "yes" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:68]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:70]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:72]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:73]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:74]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:75]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:78]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:88]
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/.Xil/Vivado-17824-ukallakuri-Lenovo-YOGA-910-13IKB/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (1#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/.Xil/Vivado-17824-ukallakuri-Lenovo-YOGA-910-13IKB/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (2#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (3#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'top_mmcme2' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:88]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:120]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:121]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:122]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:123]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:124]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:609]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 60.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 50.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 12.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_USE_FINE_PS bound to: TRUE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (5#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:26717]
+INFO: [Synth 8-6157] synthesizing module 'mmcm_drp_rcf_0628' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/mmcm_drp_rcf_0628.v:22]
+	Parameter REGISTER_LOCKED bound to: Reg - type: string 
+	Parameter USE_REG_LOCKED bound to: No - type: string 
+	Parameter CLKFBOUT_MULT bound to: 60 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0 - type: integer 
+	Parameter CLKFBOUT_FRAC bound to: 0 - type: integer 
+	Parameter CLKFBOUT_FRAC_EN bound to: 0 - type: integer 
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter RESTART bound to: 4'b0001 
+	Parameter WAIT_LOCK bound to: 4'b0010 
+	Parameter WAIT_SEN bound to: 4'b0011 
+	Parameter ADDRESS bound to: 4'b0100 
+	Parameter WAIT_A_DRDY bound to: 4'b0101 
+	Parameter BITMASK bound to: 4'b0110 
+	Parameter BITSET bound to: 4'b0111 
+	Parameter WRITE bound to: 4'b1000 
+	Parameter WAIT_DRDY bound to: 4'b1001 
+	Parameter STATE_COUNT_CONST bound to: 23 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'reg_b' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:24]
+	Parameter CLKFBOUT_MULT bound to: 60 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0 - type: integer 
+	Parameter CLKFBOUT_FRAC bound to: 0 - type: integer 
+	Parameter CLKFBOUT_FRAC_EN bound to: 0 - type: integer 
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:43]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:44]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:45]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:46]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:47]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:49]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:50]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:51]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:53]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:54]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:55]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:57]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:58]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:59]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:61]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:62]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:63]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:65]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:66]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:67]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:69]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:70]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:71]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:75]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:76]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:77]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:78]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:79]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:80]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:81]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:82]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:83]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:84]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:85]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:86]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:87]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:88]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:89]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:90]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:91]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:92]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:93]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:94]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:95]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:96]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:97]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:98]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:99]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:100]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:101]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:102]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:103]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:104]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:108]
+INFO: [Synth 8-5534] Detected attribute (* rom_style = "distributed" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:108]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:109]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:112]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:181]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:252]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:127]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:128]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:127]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:128]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:127]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:128]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:127]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:128]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:127]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:128]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:127]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:128]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:127]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:128]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:127]
+WARNING: [Synth 8-6104] Input port 'duty_cycle' has an internal driver [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:128]
+INFO: [Synth 8-6155] done synthesizing module 'reg_b' (6#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v:24]
+INFO: [Synth 8-6157] synthesizing module 'FDRE' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D_INVERTED bound to: 1'b0 
+	Parameter IS_R_INVERTED bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'FDRE' (7#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:3971]
+INFO: [Synth 8-6155] done synthesizing module 'mmcm_drp_rcf_0628' (8#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/mmcm_drp_rcf_0628.v:22]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mmcme2_drp_inst'. This will prevent further optimization [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:402]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'mmcme2_test_inst'. This will prevent further optimization [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:237]
+INFO: [Synth 8-6155] done synthesizing module 'top_mmcme2' (9#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v:88]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:131]
+INFO: [Synth 8-6157] synthesizing module 'debounce_logic' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v:23]
+	Parameter clock_frequency bound to: 100000000 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+	Parameter max_counter_val bound to: 1000000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_logic' (10#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v:23]
+WARNING: [Synth 8-350] instance 'dbl' of module 'debounce_logic' requires 4 connections, but only 2 given [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:131]
+INFO: [Synth 8-6157] synthesizing module 'debounce_logic__parameterized0' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v:23]
+	Parameter clock_frequency bound to: 100 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+	Parameter max_counter_val bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce_logic__parameterized0' (10#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v:23]
+INFO: [Synth 8-6157] synthesizing module 'design_top_temp' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:24]
+	Parameter t_r_f_ratio bound to: 10 - type: integer 
+	Parameter timeOut bound to: 660 - type: integer 
+	Parameter idle bound to: 4'b0000 
+	Parameter idle_cntr_en bound to: 4'b0001 
+	Parameter begin_ops bound to: 4'b0010 
+	Parameter tx_idle bound to: 4'b0011 
+	Parameter tx_cntr bound to: 4'b0100 
+	Parameter rx_idle bound to: 4'b0101 
+	Parameter uart_idle bound to: 4'b0110 
+	Parameter uart_ops bound to: 4'b0111 
+	Parameter uart_mem_read bound to: 4'b1010 
+	Parameter compute_delta bound to: 4'b1000 
+	Parameter rx_idle_wait bound to: 4'b1001 
+	Parameter referesh_compute bound to: 4'b1011 
+	Parameter referesh_comp_temp bound to: 4'b1100 
+INFO: [Synth 8-5534] Detected attribute (* gated_clock = "yes" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:27]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:55]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:57]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:62]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:68]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:70]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:71]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:72]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:75]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:77]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:80]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:82]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:86]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:88]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:89]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:91]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:92]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:94]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:95]
+INFO: [Synth 8-6157] synthesizing module 'cntr_tst' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v:24]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'cntr_tst' (11#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v:24]
+INFO: [Synth 8-6157] synthesizing module 'manchester_tx_top' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v:24]
+	Parameter idle bound to: 3'b000 
+	Parameter tx_preamble bound to: 3'b001 
+	Parameter coarse_read bound to: 3'b010 
+	Parameter tx_data bound to: 3'b011 
+	Parameter stop bound to: 3'b100 
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v:39]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v:45]
+INFO: [Synth 8-5534] Detected attribute (* keep = "true" *) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v:47]
+INFO: [Common 17-14] Message 'Synth 8-5534' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6157] synthesizing module 'manchester_tx_m' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'manchester_tx_m' (12#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'manchester_tx_top' (13#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'buff_cal_wrapper' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/buff_cal_wrapper.v:24]
+	Parameter idle bound to: 3'b000 
+	Parameter mem_read bound to: 3'b001 
+	Parameter inter_ops0 bound to: 3'b010 
+	Parameter inter_ops1 bound to: 3'b011 
+	Parameter add_partials bound to: 3'b100 
+	Parameter div_vals bound to: 3'b101 
+	Parameter stop bound to: 3'b110 
+	Parameter tmp_idle bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'sp_ram_sim' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'sp_ram_sim' (14#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v:24]
+INFO: [Synth 8-226] default block is never used [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/buff_cal_wrapper.v:119]
+INFO: [Synth 8-6155] done synthesizing module 'buff_cal_wrapper' (15#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/buff_cal_wrapper.v:24]
+INFO: [Synth 8-6157] synthesizing module 'manchester_rx_top' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v:24]
+	Parameter t_r_f_ratio bound to: 10 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'manchester_rx_m' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v:24]
+	Parameter t_r_f_ratio bound to: 10 - type: integer 
+	Parameter sample_1_2s bound to: 5 - type: integer 
+	Parameter sample_1_4s bound to: 2 - type: integer 
+	Parameter sample_3_4s bound to: 7 - type: integer 
+	Parameter premable bound to: 8'b10101010 
+INFO: [Synth 8-6155] done synthesizing module 'manchester_rx_m' (16#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'manchester_rx_top' (17#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v:24]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx_wrapper' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v:23]
+	Parameter DATAWIDTH bound to: 64 - type: integer 
+	Parameter BITCOUNTMAX bound to: 8 - type: integer 
+	Parameter SAMPLECOUNTMAX bound to: 10427 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_txm_ex' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v:23]
+	Parameter DATAWIDTH bound to: 64 - type: integer 
+	Parameter BITCOUNTMAX bound to: 8 - type: integer 
+	Parameter SAMPLECOUNTMAX bound to: 10427 - type: integer 
+	Parameter BCWIDTH bound to: 8 - type: integer 
+	Parameter SCWIDTH bound to: 14 - type: integer 
+	Parameter idle bound to: 2'b00 
+	Parameter tx_start bound to: 2'b01 
+	Parameter tx_data bound to: 2'b10 
+	Parameter stop bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'uart_txm_ex' (18#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx_wrapper' (19#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v:23]
+INFO: [Synth 8-226] default block is never used [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:263]
+WARNING: [Synth 8-3848] Net s_rx_err in module/entity design_top_temp does not have driver. [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:35]
+INFO: [Synth 8-6155] done synthesizing module 'design_top_temp' (20#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+	Parameter DDR_CLK_EDGE bound to: OPPOSITE_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter IS_C_INVERTED bound to: 1'b0 
+	Parameter IS_D1_INVERTED bound to: 1'b0 
+	Parameter IS_D2_INVERTED bound to: 1'b0 
+	Parameter SRTYPE bound to: SYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (21#1) [/tools/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:31641]
+WARNING: [Synth 8-6014] Unused sequential element cntr_reg was removed.  [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:221]
+INFO: [Synth 8-6155] done synthesizing module 'top' (22#1) [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:24]
+WARNING: [Synth 8-3331] design design_top_temp has unconnected port s_rx_err
+WARNING: [Synth 8-3331] design design_top_temp has unconnected port clk20M
+WARNING: [Synth 8-3331] design top_mmcme2 has unconnected port CLKIN2
+WARNING: [Synth 8-3331] design top_mmcme2 has unconnected port CLKINSEL
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1504.441 ; gain = 156.750 ; free physical = 862 ; free virtual = 4952
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin dbl:button_in to constant 0 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:131]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1504.441 ; gain = 156.750 ; free physical = 870 ; free virtual = 4961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1504.441 ; gain = 156.750 ; free physical = 870 ; free virtual = 4961
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'top_sub0/design_1_i/clk_wiz_0'
+Finished Parsing XDC File [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc] for cell 'top_sub0/design_1_i/clk_wiz_0'
+Parsing XDC File [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/constrs_1/new/vc707.xdc]
+Finished Parsing XDC File [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/constrs_1/new/vc707.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/constrs_1/new/vc707.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/dont_touch.xdc]
+INFO: [Timing 38-2] Deriving generated clocks
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2000.887 ; gain = 0.000 ; free physical = 328 ; free virtual = 4529
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2000.887 ; gain = 0.000 ; free physical = 329 ; free virtual = 4529
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2000.887 ; gain = 0.000 ; free physical = 329 ; free virtual = 4529
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2000.887 ; gain = 0.000 ; free physical = 329 ; free virtual = 4529
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2000.887 ; gain = 653.195 ; free physical = 438 ; free virtual = 4639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1761-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2000.887 ; gain = 653.195 ; free physical = 438 ; free virtual = 4639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_IN1_D_0_clk_n. (constraint file  /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_IN1_D_0_clk_n. (constraint file  /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for CLK_IN1_D_0_clk_p. (constraint file  /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for CLK_IN1_D_0_clk_p. (constraint file  /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_in_context.xdc, line 6).
+Applied set_property DONT_TOUCH = true for top_sub0/design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for top_sub0/design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 2000.887 ; gain = 653.195 ; free physical = 438 ; free virtual = 4639
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'mmcm_drp_rcf_0628'
+INFO: [Synth 8-5544] ROM "next_state_count" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_ram_addr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_di" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_rst_mmcm" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_den" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_dwe" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_daddr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+.p 10
+.s 6
+.r idle
+	 Default idle 
+	 idle tx_preamble 
+	 idle idle 
+	 tx_preamble tx_preamble 
+	 tx_preamble stop 
+	 coarse_read tx_data 
+	 tx_data tx_data 
+	 tx_data stop 
+	 stop idle 
+	 stop stop 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'manchester_tx_top'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+.p 11
+.s 8
+.r idle
+	 idle mem_read 
+	 idle idle 
+	 mem_read tmp_idle 
+	 tmp_idle inter_ops0 
+	 inter_ops0 mem_read 
+	 inter_ops0 inter_ops1 
+	 inter_ops1 mem_read 
+	 inter_ops1 add_partials 
+	 add_partials div_vals 
+	 div_vals stop 
+	 stop idle 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'buff_cal_wrapper'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data_out1" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "compute_done" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "in00" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "rx_shift_reg" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "bit_cnt" won't be mapped to RAM because it is too sparse
+.p 9
+.s 4
+.r idle
+	 idle tx_start 
+	 idle idle 
+	 tx_start tx_start 
+	 tx_start tx_data 
+	 tx_data tx_data 
+	 tx_data stop 
+	 stop stop 
+	 stop tx_start 
+	 stop idle 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_txm_ex'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+.p 29
+.s 14
+.r idle
+	 Default idle 
+	 idle idle_cntr_en 
+	 idle_cntr_en begin_ops 
+	 idle_cntr_en rx_idle 
+	 idle_cntr_en compute_delta 
+	 idle_cntr_en referesh_compute 
+	 idle_cntr_en uart_mem_read 
+	 idle_cntr_en idle_cntr_en 
+	 rx_idle begin_ops 
+	 begin_ops idle_cntr_en 
+	 begin_ops rx_idle_wait 
+	 begin_ops tx_idle 
+	 begin_ops rx_idle 
+	 rx_idle_wait rx_idle_wait 
+	 rx_idle_wait idle_cntr_en 
+	 tx_idle tx_idle 
+	 tx_idle tx_cntr 
+	 tx_cntr tx_cntr 
+	 tx_cntr idle_cntr_en 
+	 compute_delta compute_delta 
+	 compute_delta idle_cntr_en 
+	 referesh_compute referesh_comp_temp 
+	 referesh_comp_temp begin_ops 
+	 uart_mem_read uart_idle 
+	 uart_idle uart_idle 
+	 uart_idle uart_ops 
+	 uart_ops uart_ops 
+	 uart_ops uart_mem_read 
+	 uart_ops idle 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'design_top_temp'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cntr_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tx_on" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dbuff_mem_wea" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dbuff_mem_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rst_state_mach" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dbuff_mem_addra" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cntr" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ts_count_internal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dbuff_mem_addra_uart" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_mem_en" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "uart_tx_load" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "slave_rx_flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "slave_trigger_internal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ops_2" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "compute_on" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "compute_on_internal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "trigger_slave" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "referesh_rate" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "comp_flag" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+.p 6
+.s 4
+.r idle
+	 idle s1 
+	 idle idle 
+	 s1 s2 
+	 s2 s3 
+	 s3 idle 
+	 s3 s3 
+.e
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'top'
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RESTART |                        000000001 |                             0001
+               WAIT_LOCK |                        000000010 |                             0010
+                WAIT_SEN |                        000000100 |                             0011
+                 ADDRESS |                        000001000 |                             0100
+             WAIT_A_DRDY |                        000010000 |                             0101
+                 BITMASK |                        000100000 |                             0110
+                  BITSET |                        001000000 |                             0111
+                   WRITE |                        010000000 |                             1000
+               WAIT_DRDY |                        100000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'mmcm_drp_rcf_0628'
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'manchester_tx_top', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    idle |                              000 |                              000
+             tx_preamble |                              001 |                              001
+                    stop |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'buff_cal_wrapper', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+                mem_read |                              001 |                              001
+                tmp_idle |                              111 |                              111
+              inter_ops0 |                              010 |                              010
+              inter_ops1 |                              011 |                              011
+            add_partials |                              100 |                              100
+                div_vals |                              101 |                              101
+                    stop |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'uart_txm_ex', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                tx_start |                               01 |                               01
+                 tx_data |                               10 |                               10
+                    stop |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'design_top_temp', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                    idle |                             0000 |                             0000
+            idle_cntr_en |                             0001 |                             0001
+           compute_delta |                             1000 |                             1000
+        referesh_compute |                             1011 |                             1011
+      referesh_comp_temp |                             1100 |                             1100
+               begin_ops |                             0010 |                             0010
+            rx_idle_wait |                             1001 |                             1001
+                 tx_idle |                             0011 |                             0011
+                 tx_cntr |                             0100 |                             0100
+                 rx_idle |                             0101 |                             0101
+           uart_mem_read |                             1010 |                             1010
+               uart_idle |                             0110 |                             0110
+                uart_ops |                             0111 |                             0111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-6159] Found Keep on FSM register 'state_reg' in module 'top', re-encoding will not be performed
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s2 |                               10 |                               10
+                      s3 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2000.887 ; gain = 653.195 ; free physical = 408 ; free virtual = 4610
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |reg_b__GB0             |           1|     17201|
+|2     |reg_b__GB1             |           1|      8048|
+|3     |reg_b__GB2             |           1|      2690|
+|4     |reg_b__GB3             |           1|      5535|
+|5     |reg_b__GB4             |           1|      4362|
+|6     |reg_b__GB5             |           1|      9193|
+|7     |reg_b__GB6             |           1|      6110|
+|8     |reg_b__GB7             |           1|     12220|
+|9     |mmcm_drp_rcf_0628__GC0 |           1|       201|
+|10    |top_mmcme2__GC0        |           1|        18|
+|11    |top__GC0               |           1|     16164|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     65 Bit       Adders := 3     
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     64 Bit       Adders := 2     
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 37    
+	   2 Input     16 Bit       Adders := 7     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 8     
+	   4 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 9     
+	   2 Input      6 Bit       Adders := 9     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 5     
+	   3 Input      3 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 6     
++---Registers : 
+	               65 Bit    Registers := 3     
+	               64 Bit    Registers := 16    
+	               39 Bit    Registers := 33    
+	               32 Bit    Registers := 25    
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 8     
+	                1 Bit    Registers := 54    
++---Multipliers : 
+	                12x33  Multipliers := 1     
+	                12x32  Multipliers := 1     
+	                 8x32  Multipliers := 7     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   8 Input     65 Bit        Muxes := 3     
+	   2 Input     65 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 27    
+	   8 Input     64 Bit        Muxes := 2     
+	   5 Input     64 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   4 Input     64 Bit        Muxes := 3     
+	   2 Input     39 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 57    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     17 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 7     
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 3     
+	   4 Input     14 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 5     
+	   3 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 12    
+	  14 Input      8 Bit        Muxes := 1     
+	   9 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 9     
+	   2 Input      6 Bit        Muxes := 21    
+	   9 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 28    
+	   8 Input      4 Bit        Muxes := 1     
+	  14 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 13    
+	   6 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 138   
+	   9 Input      1 Bit        Muxes := 8     
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 6     
+	  14 Input      1 Bit        Muxes := 30    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+Module reg_b 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 36    
+	   2 Input     16 Bit       Adders := 7     
+	   2 Input      8 Bit       Adders := 7     
+	   4 Input      8 Bit       Adders := 1     
+	   3 Input      6 Bit       Adders := 9     
+	   2 Input      6 Bit       Adders := 7     
+	   3 Input      3 Bit       Adders := 1     
++---Registers : 
+	               39 Bit    Registers := 33    
+	               32 Bit    Registers := 23    
+	                1 Bit    Registers := 1     
++---Multipliers : 
+	                12x33  Multipliers := 1     
+	                12x32  Multipliers := 1     
+	                 8x32  Multipliers := 7     
++---Muxes : 
+	   2 Input     39 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 56    
+	   2 Input     17 Bit        Muxes := 7     
+	   2 Input     16 Bit        Muxes := 7     
+	   2 Input      6 Bit        Muxes := 21    
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+Module mmcm_drp_rcf_0628 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 1     
+	   9 Input      9 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 5     
+	   9 Input      7 Bit        Muxes := 1     
+	   9 Input      5 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 8     
+Module top_mmcme2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module debounce_logic 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module debounce_logic__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+Module cntr_tst 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     64 Bit       Adders := 1     
+	   3 Input     64 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 3     
+Module manchester_tx_m 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 25    
+Module manchester_tx_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 1     
+Module sp_ram_sim 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module buff_cal_wrapper 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     65 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               65 Bit    Registers := 3     
+	               64 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   8 Input     65 Bit        Muxes := 3     
+	   2 Input     65 Bit        Muxes := 2     
+	   8 Input     64 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 6     
+	   5 Input     64 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   8 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+Module manchester_rx_m 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 2     
+	                7 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 18    
+Module manchester_rx_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               64 Bit    Registers := 1     
+Module uart_txm_ex 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 6     
+	   4 Input     64 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 3     
+	   4 Input     14 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 8     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 9     
+	   4 Input      1 Bit        Muxes := 2     
+Module design_top_temp 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     64 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               64 Bit    Registers := 4     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 6     
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 7     
+	   4 Input     64 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 1     
+	  14 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 22    
+	  14 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	  14 Input      1 Bit        Muxes := 30    
+	   2 Input      1 Bit        Muxes := 39    
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP duty_cycle3, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle3 is absorbed into DSP duty_cycle3.
+DSP Report: Generating DSP duty_cycle2, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle2 is absorbed into DSP duty_cycle2.
+DSP Report: Generating DSP decimal, operation Mode is: A*B.
+DSP Report: operator decimal is absorbed into DSP decimal.
+DSP Report: Generating DSP round_frac10, operation Mode is: ((C:0x200) or 0)+A*B.
+DSP Report: operator round_frac100 is absorbed into DSP round_frac10.
+DSP Report: operator decimal is absorbed into DSP round_frac10.
+DSP Report: Generating DSP duty_cycle2, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle2 is absorbed into DSP duty_cycle2.
+DSP Report: Generating DSP decimal, operation Mode is: A*B.
+DSP Report: operator decimal is absorbed into DSP decimal.
+DSP Report: Generating DSP round_frac14, operation Mode is: ((C:0x200) or 0)+A*B.
+DSP Report: operator round_frac140 is absorbed into DSP round_frac14.
+DSP Report: operator decimal is absorbed into DSP round_frac14.
+DSP Report: Generating DSP duty_cycle2, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle2 is absorbed into DSP duty_cycle2.
+DSP Report: Generating DSP decimal, operation Mode is: A*B.
+DSP Report: operator decimal is absorbed into DSP decimal.
+DSP Report: Generating DSP round_frac18, operation Mode is: ((C:0x200) or 0)+A*B.
+DSP Report: operator round_frac180 is absorbed into DSP round_frac18.
+DSP Report: operator decimal is absorbed into DSP round_frac18.
+DSP Report: Generating DSP duty_cycle3, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle3 is absorbed into DSP duty_cycle3.
+DSP Report: Generating DSP duty_cycle2, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle2 is absorbed into DSP duty_cycle2.
+DSP Report: Generating DSP decimal, operation Mode is: A*B.
+DSP Report: operator decimal is absorbed into DSP decimal.
+DSP Report: Generating DSP round_frac12, operation Mode is: ((C:0x200) or 0)+A*B.
+DSP Report: operator round_frac120 is absorbed into DSP round_frac12.
+DSP Report: operator decimal is absorbed into DSP round_frac12.
+DSP Report: Generating DSP decimal, operation Mode is: A*B.
+DSP Report: operator decimal is absorbed into DSP decimal.
+DSP Report: Generating DSP round_frac8, operation Mode is: ((C:0x200) or 0)+A*B.
+DSP Report: operator round_frac80 is absorbed into DSP round_frac8.
+DSP Report: operator decimal is absorbed into DSP round_frac8.
+DSP Report: Generating DSP duty_cycle2, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle2 is absorbed into DSP duty_cycle2.
+DSP Report: Generating DSP decimal, operation Mode is: A*B.
+DSP Report: operator decimal is absorbed into DSP decimal.
+DSP Report: Generating DSP round_frac16, operation Mode is: ((C:0x200) or 0)+A*B.
+DSP Report: operator round_frac160 is absorbed into DSP round_frac16.
+DSP Report: operator decimal is absorbed into DSP round_frac16.
+DSP Report: Generating DSP duty_cycle2, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle2 is absorbed into DSP duty_cycle2.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:802]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:805]
+DSP Report: Generating DSP mmcm_frac_count_calc0_return4, operation Mode is: A*B.
+DSP Report: operator mmcm_frac_count_calc0_return4 is absorbed into DSP mmcm_frac_count_calc0_return4.
+DSP Report: operator mmcm_frac_count_calc0_return4 is absorbed into DSP mmcm_frac_count_calc0_return4.
+DSP Report: Generating DSP mmcm_frac_count_calc0_return4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mmcm_frac_count_calc0_return4 is absorbed into DSP mmcm_frac_count_calc0_return4.
+DSP Report: operator mmcm_frac_count_calc0_return4 is absorbed into DSP mmcm_frac_count_calc0_return4.
+DSP Report: Generating DSP mmcm_frac_count_calc0_return2, operation Mode is: A*B.
+DSP Report: operator mmcm_frac_count_calc0_return2 is absorbed into DSP mmcm_frac_count_calc0_return2.
+DSP Report: operator mmcm_frac_count_calc0_return2 is absorbed into DSP mmcm_frac_count_calc0_return2.
+DSP Report: Generating DSP mmcm_frac_count_calc0_return2, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator mmcm_frac_count_calc0_return2 is absorbed into DSP mmcm_frac_count_calc0_return2.
+DSP Report: operator mmcm_frac_count_calc0_return2 is absorbed into DSP mmcm_frac_count_calc0_return2.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:219]
+DSP Report: Generating DSP decimal0, operation Mode is: A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP decimal0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:219]
+DSP Report: Generating DSP duty_cycle3, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle3 is absorbed into DSP duty_cycle3.
+DSP Report: Generating DSP decimal0, operation Mode is: A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP decimal0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP duty_cycle3, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle3 is absorbed into DSP duty_cycle3.
+DSP Report: Generating DSP duty_cycle3, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle3 is absorbed into DSP duty_cycle3.
+DSP Report: Generating DSP duty_cycle3, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle3 is absorbed into DSP duty_cycle3.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:219]
+DSP Report: Generating DSP decimal0, operation Mode is: A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP decimal0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:219]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:219]
+DSP Report: Generating DSP decimal0, operation Mode is: A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP decimal0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP duty_cycle3, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle3 is absorbed into DSP duty_cycle3.
+DSP Report: Generating DSP duty_cycle2, operation Mode is: (A:0x186a0)*B.
+DSP Report: operator duty_cycle2 is absorbed into DSP duty_cycle2.
+DSP Report: Generating DSP decimal, operation Mode is: A*B.
+DSP Report: operator decimal is absorbed into DSP decimal.
+DSP Report: Generating DSP round_frac4, operation Mode is: ((C:0x200) or 0)+A*B.
+DSP Report: operator round_frac40 is absorbed into DSP round_frac4.
+DSP Report: operator decimal is absorbed into DSP round_frac4.
+DSP Report: Generating DSP decimal0, operation Mode is: A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP decimal0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "no_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:219]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/imports/MMCME2_DRP/mmcme2_drp_func.h:219]
+DSP Report: Generating DSP decimal0, operation Mode is: A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP decimal0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP decimal0, operation Mode is: A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: Generating DSP decimal0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+DSP Report: operator decimal0 is absorbed into DSP decimal0.
+INFO: [Synth 8-5546] ROM "rx_m/in00" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "rx_m/bit_cnt" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:14 . Memory (MB): peak = 2019.887 ; gain = 672.195 ; free physical = 313 ; free virtual = 4531
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++-------------------------+------------+-----------+----------------------+-----------------+
+|Module Name              | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++-------------------------+------------+-----------+----------------------+-----------------+
+|i_0/top_sub1/dbuff/dbuff | ram_sp_reg | Implied   | 16 x 64              | RAM16X1S x 64   | 
++-------------------------+------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping  Report (see note below)
++------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping          | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|reg_b             | (A:0x186a0)*B        | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 7      | 17     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | A*B                  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | ((C:0x200) or 0)+A*B | 16     | 8      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 7      | 17     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | A*B                  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | ((C:0x200) or 0)+A*B | 16     | 8      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 7      | 17     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | A*B                  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | ((C:0x200) or 0)+A*B | 16     | 8      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 7      | 17     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | A*B                  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | ((C:0x200) or 0)+A*B | 16     | 8      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|reg_b             | A*B                  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | ((C:0x200) or 0)+A*B | 16     | 8      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 7      | 17     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | A*B                  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | ((C:0x200) or 0)+A*B | 16     | 8      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 7      | 17     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 16     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 17     | 13     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 8      | 17     | -      | -      | 25     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | (A:0x186a0)*B        | 7      | 17     | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | A*B                  | 16     | 8      | -      | -      | 24     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|reg_b             | ((C:0x200) or 0)+A*B | 16     | 8      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | A*B                  | 18     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mmcm_drp_rcf_0628 | (PCIN>>17)+A*B       | 16     | 9      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------------+----------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |reg_b__GB0             |           1|     11063|
+|2     |reg_b__GB1             |           1|      7032|
+|3     |reg_b__GB2             |           1|      3696|
+|4     |reg_b__GB3             |           1|      4323|
+|5     |reg_b__GB4             |           1|      5279|
+|6     |reg_b__GB5             |           1|      9565|
+|7     |reg_b__GB6             |           1|      6458|
+|8     |reg_b__GB7             |           1|     12977|
+|9     |mmcm_drp_rcf_0628__GC0 |           1|       203|
+|10    |top_mmcme2__GC0        |           1|        18|
+|11    |top__GC0               |           1|      6385|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'top_sub0/design_1_i/clk_wiz_0/clk_out1' to pin 'top_sub0/design_1_i/clk_wiz_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:23 ; elapsed = 00:01:28 . Memory (MB): peak = 2036.887 ; gain = 689.195 ; free physical = 164 ; free virtual = 4389
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+info: optimization accepted worst group hill climbing move (-4227.0/oG. 1031.0ps)
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:26 ; elapsed = 00:02:33 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 295 ; free virtual = 4281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++-------------------------+------------+-----------+----------------------+-----------------+
+|Module Name              | RTL Object | Inference | Size (Depth x Width) | Primitives      | 
++-------------------------+------------+-----------+----------------------+-----------------+
+|i_0/top_sub1/dbuff/dbuff | ram_sp_reg | Implied   | 16 x 64              | RAM16X1S x 64   | 
++-------------------------+------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |reg_b__GB2             |           1|      3696|
+|2     |reg_b__GB4             |           1|      5279|
+|3     |reg_b__GB5             |           1|      9565|
+|4     |reg_b__GB6             |           1|      6458|
+|5     |mmcm_drp_rcf_0628__GC0 |           1|       203|
+|6     |top_mmcme2__GC0        |           1|        18|
+|7     |top__GC0               |           1|      6385|
+|8     |mmcm_drp_rcf_0628_GT0  |           1|     34241|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:42 ; elapsed = 00:02:49 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 315 ; free virtual = 4301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin trigger_master_internal_inferred:in0 to constant 0
+WARNING: [Synth 8-3295] tying undriven pin trigger_slave_internal_inferred:in0 to constant 0
+WARNING: [Synth 8-5396] Clock pin I0 has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:209]
+WARNING: [Synth 8-5396] Clock pin C has keep related attribute (keep/mark_debug/dont_touch) which could create extra logic on its net [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:117]
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:48 ; elapsed = 00:02:55 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 315 ; free virtual = 4302
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:50 ; elapsed = 00:02:57 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 316 ; free virtual = 4302
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:54 ; elapsed = 00:03:01 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 316 ; free virtual = 4302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:54 ; elapsed = 00:03:01 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 316 ; free virtual = 4302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:54 ; elapsed = 00:03:01 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 316 ; free virtual = 4302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:54 ; elapsed = 00:03:01 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 316 ; free virtual = 4302
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------+----------+
+|      |BlackBox name        |Instances |
++------+---------------------+----------+
+|1     |design_1_clk_wiz_0_0 |         1|
++------+---------------------+----------+
+
+Report Cell Usage: 
++------+---------------------+------+
+|      |Cell                 |Count |
++------+---------------------+------+
+|1     |design_1_clk_wiz_0_0 |     1|
+|2     |BUFG                 |    10|
+|3     |CARRY4               |  2933|
+|4     |DSP48E1              |    39|
+|5     |DSP48E1_1            |     7|
+|6     |LUT1                 |  1228|
+|7     |LUT2                 |  2514|
+|8     |LUT3                 |  6510|
+|9     |LUT4                 |  2612|
+|10    |LUT5                 |  2346|
+|11    |LUT6                 |  5094|
+|12    |MMCME2_ADV           |     1|
+|13    |MUXF7                |   330|
+|14    |ODDR                 |     1|
+|15    |RAM16X1S             |    64|
+|16    |FDCE                 |     7|
+|17    |FDPE                 |     1|
+|18    |FDRE                 |  3525|
+|19    |FDSE                 |    57|
+|20    |IBUF                 |     4|
+|21    |OBUF                 |    11|
++------+---------------------+------+
+
+Report Instance Areas: 
++------+--------------------+-------------------------------+------+
+|      |Instance            |Module                         |Cells |
++------+--------------------+-------------------------------+------+
+|1     |top                 |                               | 27295|
+|2     |  dbl               |debounce_logic                 |    73|
+|3     |  dbl_uart          |debounce_logic__parameterized0 |    69|
+|4     |  feedback          |top_mmcme2                     | 24023|
+|5     |    mmcme2_drp_inst |mmcm_drp_rcf_0628              | 24004|
+|6     |      reg_bank      |reg_b                          | 21654|
+|7     |  top_sub0          |design_1_wrapper               |     1|
+|8     |    design_1_i      |design_1                       |     1|
+|9     |  top_sub1          |design_top_temp                |  3018|
+|10    |    dbuff           |buff_cal_wrapper               |  1122|
+|11    |      dbuff         |sp_ram_sim                     |   321|
+|12    |    rx_m            |manchester_rx_top              |   550|
+|13    |      rx_m          |manchester_rx_m                |   486|
+|14    |    ts_gen          |cntr_tst                       |   353|
+|15    |    tx_m            |manchester_tx_top              |   306|
+|16    |      tx_m          |manchester_tx_m                |   226|
+|17    |    uart            |uart_tx_wrapper                |   239|
+|18    |      tx            |uart_txm_ex                    |   239|
++------+--------------------+-------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:54 ; elapsed = 00:03:01 . Memory (MB): peak = 2288.613 ; gain = 940.922 ; free physical = 316 ; free virtual = 4302
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:38 ; elapsed = 00:02:43 . Memory (MB): peak = 2288.613 ; gain = 444.477 ; free physical = 387 ; free virtual = 4373
+Synthesis Optimization Complete : Time (s): cpu = 00:02:55 ; elapsed = 00:03:01 . Memory (MB): peak = 2288.621 ; gain = 940.922 ; free physical = 387 ; free virtual = 4373
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 3375 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2288.621 ; gain = 0.000 ; free physical = 321 ; free virtual = 4308
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+270 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:59 ; elapsed = 00:03:06 . Memory (MB): peak = 2288.621 ; gain = 960.387 ; free physical = 406 ; free virtual = 4393
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2288.621 ; gain = 0.000 ; free physical = 407 ; free virtual = 4394
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/top.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2312.625 ; gain = 24.004 ; free physical = 409 ; free virtual = 4398
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  2 12:45:34 2021...

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../general_station_07_17.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../../general_station_07_17.srcs/sources_1/new" --include "../../../../../general_station_07_17.srcs/sources_1/imports/MMCME2_DRP" \
+"design_top_temp_tb_func_synth.v" \
+"../../../../../general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" \
+
+# Do not sort compile order
+nosort

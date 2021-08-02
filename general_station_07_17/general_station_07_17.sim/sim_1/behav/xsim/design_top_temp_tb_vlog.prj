@@ -1,0 +1,28 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../general_station_07_17.srcs/sources_1/bd/design_1/ipshared/85a3" --include "../../../../general_station_07_17.srcs/sources_1/new" --include "../../../../general_station_07_17.srcs/sources_1/imports/MMCME2_DRP" \
+"../../../../general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../../general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../../general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/buff_cal_wrapper.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/cntr_tst.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/debounce_logic.v" \
+"../../../../general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/design_top_temp.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/mmcm_drp_rcf_0628.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/reg_b.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/top.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/top_mmcme2.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" \
+"../../../../general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" \
+"../../../../general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

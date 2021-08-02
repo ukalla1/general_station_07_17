@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v,1627838113,verilog,,/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v,,cntr_tst;debounce_logic;debounce_logic_0;design_1;design_1_clk_wiz_0_0;design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz;design_1_wrapper;design_top_temp;glbl;manchester_rx_m;manchester_rx_top;manchester_tx_m;manchester_tx_top;mmcm_drp_rcf_0628;reg_b;sp_ram_sim;top;top_mmcme2;uart_tx_wrapper;uart_txm_ex,,,../../../../../general_station_07_17.srcs/sources_1/bd/design_1/ipshared/85a3;../../../../../general_station_07_17.srcs/sources_1/imports/MMCME2_DRP;../../../../../general_station_07_17.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v,1627219440,verilog,,,/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/parameters_top.vh,design_top_temp_tb,,,../../../../../general_station_07_17.srcs/sources_1/bd/design_1/ipshared/85a3;../../../../../general_station_07_17.srcs/sources_1/imports/MMCME2_DRP;../../../../../general_station_07_17.srcs/sources_1/new,,,,,
+/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/parameters_top.vh,1627233806,verilog,,,,,,,,,,,,

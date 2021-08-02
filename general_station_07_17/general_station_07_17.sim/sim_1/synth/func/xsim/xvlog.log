@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/synth/func/xsim/design_top_temp_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buff_cal_wrapper
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-311] analyzing module debounce_logic_0
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-311] analyzing module mmcm_drp_rcf_0628
+INFO: [VRFC 10-311] analyzing module reg_b
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module top_mmcme2
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb

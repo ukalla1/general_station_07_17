@@ -1,0 +1,263 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Jul 31 10:52:43 2021
+# Process ID: 222455
+# Current directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
+# Command line: vivado
+# Log file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
+# Journal file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 6405.316 ; gain = 149.887 ; free physical = 2169 ; free virtual = 3690
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type functional
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [Netlist 29-17] Analyzing 3282 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7vx485tffg1761-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 7473.703 ; gain = 31.676 ; free physical = 955 ; free virtual = 2612
+Restored from archive | CPU: 1.240000 secs | Memory: 27.154999 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 7473.703 ; gain = 31.676 ; free physical = 955 ; free virtual = 2612
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7473.703 ; gain = 0.000 ; free physical = 957 ; free virtual = 2615
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+
+open_run: Time (s): cpu = 00:00:57 ; elapsed = 00:00:39 . Memory (MB): peak = 7700.402 ; gain = 1192.988 ; free physical = 795 ; free virtual = 2465
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v"
+INFO: [SIM-utils-36] Netlist generated:/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buff_cal_wrapper
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-311] analyzing module debounce_logic__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-311] analyzing module mmcm_drp_rcf_0628
+INFO: [VRFC 10-311] analyzing module reg_b
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module top_mmcme2
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_top_temp_tb_func_impl xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 8 for port 'LED_OUT' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.ODDR
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.debounce_logic__parameterized0
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.reg_b
+Compiling module xil_defaultlib.mmcm_drp_rcf_0628
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,...
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.FDPE_default
+Compiling module xil_defaultlib.top_mmcme2
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_design_1_cl...
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module unisims_ver.RAM32X1S
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.buff_cal_wrapper
+Compiling module xil_defaultlib.manchester_rx_m
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.cntr_tst
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.uart_txm_ex
+Compiling module xil_defaultlib.uart_tx_wrapper
+Compiling module xil_defaultlib.design_top_temp
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_func_impl
+run_program: Time (s): cpu = 00:02:02 ; elapsed = 00:03:51 . Memory (MB): peak = 7700.402 ; gain = 0.000 ; free physical = 1979 ; free virtual = 2526
+INFO: [USF-XSim-69] 'elaborate' step finished in '232' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_top_temp_tb_func_impl -key {Post-Implementation:sim_1:Functional:design_top_temp_tb} -tclbatch {design_top_temp_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+Time resolution is 1 ps
+source design_top_temp_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_top_temp_tb_func_impl' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:03:31 ; elapsed = 00:04:48 . Memory (MB): peak = 7732.582 ; gain = 1225.168 ; free physical = 1353 ; free virtual = 2351
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-31] Writing simulation netlist file for design 'impl_1'...
+INFO: [SIM-utils-32] write_verilog -mode funcsim -nolib -force -file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v"
+INFO: [SIM-utils-36] Netlist generated:/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim/design_top_temp_tb_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buff_cal_wrapper
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-311] analyzing module debounce_logic__parameterized0
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-311] analyzing module mmcm_drp_rcf_0628
+INFO: [VRFC 10-311] analyzing module reg_b
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module top_mmcme2
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching post-implementation functional simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/impl/func/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot design_top_temp_tb_func_impl xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 8 for port 'LED_OUT' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v:93]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.OBUF
+Compiling module unisims_ver.ODDR
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.debounce_logic__parameterized0
+Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module unisims_ver.MUXF7
+Compiling module unisims_ver.DSP48E1(ACASCREG=0,ALUMODEREG=0,...
+Compiling module xil_defaultlib.reg_b
+Compiling module xil_defaultlib.mmcm_drp_rcf_0628
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,...
+Compiling module unisims_ver.FDCE_default
+Compiling module unisims_ver.FDPE_default
+Compiling module xil_defaultlib.top_mmcme2
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_design_1_cl...
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module unisims_ver.RAM32X1S
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.buff_cal_wrapper
+Compiling module xil_defaultlib.manchester_rx_m
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.cntr_tst
+Compiling module unisims_ver.FDRE(INIT=1'b1)
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.uart_txm_ex
+Compiling module xil_defaultlib.uart_tx_wrapper
+Compiling module xil_defaultlib.design_top_temp
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl

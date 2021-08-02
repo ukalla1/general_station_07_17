@@ -1,0 +1,19 @@
+#
+# An unexpected error has occurred (6)
+#
+Stack:
+/lib/x86_64-linux-gnu/libc.so.6(+0x46210) [0x7f572f4b6210]
+/lib/x86_64-linux-gnu/libc.so.6(gsignal+0xcb) [0x7f572f4b618b]
+/lib/x86_64-linux-gnu/libc.so.6(abort+0x12b) [0x7f572f495859]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/libtcmalloc.so.4(tcmalloc::Log(tcmalloc::LogMode, char const*, int, tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem, tcmalloc::LogItem)+0x20b) [0x7f573100eafb]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/libtcmalloc.so.4(+0x17bef) [0x7f5731002bef]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/libtcmalloc.so.4(tc_cfree+0x358) [0x7f57310243a8]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/librdi_wavedata.so(std::_Hashtable<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, SimBridge::MiObject*>, std::allocator<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, SimBridge::MiObject*> >, std::__detail::_Select1st, std::equal_to<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::hash<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<true, false, true> >::_M_insert_unique_node(unsigned long, unsigned long, std::__detail::_Hash_node<std::pair<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const, SimBridge::MiObject*>, true>*)+0x106) [0x7f56f9e489f6]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/librdi_wavedata.so(SimBridge::MiParserImpl::parseTuple(SimBridge::MiTokenizer::TokenType)+0x306) [0x7f56f9e478f6]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/librdi_wavedata.so(SimBridge::MiParserImpl::parseDataResponse(SimBridge::MiDataResponse::DataResponseType, int)+0x19d) [0x7f56f9e4802d]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/librdi_wavedata.so(SimBridge::MiParser::nextResponse()+0x9f) [0x7f56f9e4828f]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/librdi_wavedata.so(+0x1c950b) [0x7f56f9e4450b]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/librdi_wavedata.so(SimBridge::BoostProcessTransport::runPrivateChannel()+0x7d) [0x7f56f9e2749d]
+/tools/Xilinx/Vivado/2018.3/lib/lnx64.o/libboost_thread.so(+0xfa0d) [0x7f572d8a0a0d]
+/lib/x86_64-linux-gnu/libpthread.so.0(+0x9609) [0x7f572f456609]
+/lib/x86_64-linux-gnu/libc.so.6(clone+0x43) [0x7f572f592293]
