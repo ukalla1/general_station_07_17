@@ -4,37 +4,6 @@ Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084
 Using 8 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 8 for port 'LED_OUT' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v:93]
-WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:156]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
 Completed static elaboration
-Starting simulation data flow analysis
-Completed simulation data flow analysis
-Time Resolution for simulation is 1ps
-Compiling module unisims_ver.IBUFDS
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
-Compiling module xil_defaultlib.design_1_clk_wiz_0_0
-Compiling module xil_defaultlib.design_1
-Compiling module xil_defaultlib.design_1_wrapper
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,...
-Compiling module xil_defaultlib.reg_b(CLKFBOUT_MULT=60,CLKFBOUT_...
-Compiling module unisims_ver.FDRE_default
-Compiling module xil_defaultlib.mmcm_drp_rcf_0628(CLKFBOUT_MULT=...
-Compiling module xil_defaultlib.top_mmcme2
-Compiling module xil_defaultlib.debounce_logic_default
-Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
-Compiling module xil_defaultlib.cntr_tst
-Compiling module xil_defaultlib.manchester_tx_m
-Compiling module xil_defaultlib.manchester_tx_top
-Compiling module xil_defaultlib.sp_ram_sim
-Compiling module xil_defaultlib.buff_cal_wrapper
-Compiling module xil_defaultlib.manchester_rx_m_default
-Compiling module xil_defaultlib.manchester_rx_top
-Compiling module xil_defaultlib.uart_txm_ex(DATAWIDTH=64,BITCOUN...
-Compiling module xil_defaultlib.uart_tx_wrapper(DATAWIDTH=64,BIT...
-Compiling module xil_defaultlib.design_top_temp_default
-Compiling module unisims_ver.ODDR
-Compiling module xil_defaultlib.top
-Compiling module xil_defaultlib.design_top_temp_tb
-Compiling module xil_defaultlib.glbl
-Built simulation snapshot design_top_temp_tb_behav
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel

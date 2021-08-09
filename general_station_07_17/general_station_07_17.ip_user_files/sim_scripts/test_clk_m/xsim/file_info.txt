@@ -1,0 +1,3 @@
+test_clk_m_sim_clk_gen_0_0.v,verilog,xil_defaultlib,../../../bd/test_clk_m/ip/test_clk_m_sim_clk_gen_0_0/sim/test_clk_m_sim_clk_gen_0_0.v,
+test_clk_m.v,verilog,xil_defaultlib,../../../bd/test_clk_m/sim/test_clk_m.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

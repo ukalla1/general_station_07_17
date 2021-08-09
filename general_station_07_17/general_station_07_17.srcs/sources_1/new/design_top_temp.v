@@ -337,6 +337,8 @@ module design_top_temp #(
                     if(!rst) begin
                         cntr_en <= 1'b1;
                         state <= idle_cntr_en;
+                        dbuff_mem_addra <= 0;
+                        dbuff_mem_addra_uart <= 0;
                     end
                 end
                 

@@ -1,0 +1,275 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Aug  5 23:06:49 2021
+# Process ID: 3307
+# Current directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
+# Command line: vivado
+# Log file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
+# Journal file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/8B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/8B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/8B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/8B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/8B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/8B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/256B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+disconnect_hw_server localhost:3121
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_slave.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_master.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+disconnect_hw_server localhost:3121
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/bit_files/test/64B/top_master.bit} [get_hw_devices xc7vx485t_0]
+current_hw_device [get_hw_devices xc7vx485t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7vx485t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7vx485t_0]
+set_property PROGRAM.FILE {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/top.bit} [get_hw_devices xc7vx485t_0]
+program_hw_devices [get_hw_devices xc7vx485t_0]
+refresh_hw_device [lindex [get_hw_devices xc7vx485t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+close_hw

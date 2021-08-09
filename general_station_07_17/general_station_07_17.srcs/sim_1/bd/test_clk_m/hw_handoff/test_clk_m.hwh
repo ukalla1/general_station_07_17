@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Aug  3 21:03:29 2021" VIVADOVERSION="2018.3">
+
+  <SYSTEMINFO ARCH="virtex7" BOARD="xilinx.com:vc707:part0:1.4" DEVICE="7vx485t" NAME="test_clk_m" PACKAGE="ffg1761" SPEEDGRADE="-2"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="diff_clk_0_clk_n" SIGIS="clk" SIGNAME="sim_clk_gen_0_clk_n">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sim_clk_gen_0" PORT="clk_n"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="diff_clk_0_clk_p" SIGIS="clk" SIGNAME="sim_clk_gen_0_clk_p">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="sim_clk_gen_0" PORT="clk_p"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="sim_clk_gen_0_diff_clk" NAME="diff_clk_0" TYPE="INITIATOR">
+      <PARAMETER NAME="CAN_DEBUG" VALUE="false"/>
+      <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+      <PORTMAPS>
+        <PORTMAP LOGICAL="CLK_N" PHYSICAL="diff_clk_0_clk_n"/>
+        <PORTMAP LOGICAL="CLK_P" PHYSICAL="diff_clk_0_clk_p"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/sim_clk_gen_0" HWVERSION="1.0" INSTANCE="sim_clk_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sim_clk_gen" VLNV="xilinx.com:ip:sim_clk_gen:1.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=sim_clk_gen;v=v1_0;d=pb054-sim-clk-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="CLOCK_PERIOD" VALUE="5.0"/>
+        <PARAMETER NAME="INITIAL_RESET_CLOCK_CYCLES" VALUE="100"/>
+        <PARAMETER NAME="RESET_POLARITY" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="test_clk_m_sim_clk_gen_0_0"/>
+        <PARAMETER NAME="CLOCK_TYPE" VALUE="Differential"/>
+        <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="clk_n" SIGIS="clk" SIGNAME="sim_clk_gen_0_clk_n">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="test_clk_m_imp" PORT="diff_clk_0_clk_n"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_p" SIGIS="clk" SIGNAME="sim_clk_gen_0_clk_p">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="test_clk_m_imp" PORT="diff_clk_0_clk_p"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="sim_clk_gen_0_diff_clk" NAME="diff_clk" TYPE="INITIATOR" VLNV="xilinx.com:interface:diff_clock:1.0">
+          <PARAMETER NAME="CAN_DEBUG" VALUE="false"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="200000000"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="CLK_N" PHYSICAL="clk_n"/>
+            <PORTMAP LOGICAL="CLK_P" PHYSICAL="clk_p"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

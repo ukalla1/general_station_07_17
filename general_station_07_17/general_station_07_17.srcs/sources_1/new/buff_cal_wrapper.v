@@ -222,7 +222,7 @@ module buff_cal_wrapper(
                 stop: begin
                     en_comp <= 1'b0;
                     wea_comp <= 1'b0;
-//                    compute_done <= 1'b1;
+                    compute_done <= 1'b0;
                     state <= idle;
                 end
                 

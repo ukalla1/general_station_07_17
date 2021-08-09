@@ -13,7 +13,7 @@
     `define TXF 20                          //Transmiter Freq
     `define RXF 100                         //Receiver Freq
     
-    `define DATAWIDTH 64                    //Width of the data bits
+    `define DATAWIDTH 8                    //Width of the data bits
     
 //    `define PREAMBLE 8'b1100_1100           //The first data that is transferred
     `define PREAMBLE {(4){2'b10}}           //The first data that is transferred 

@@ -30,6 +30,11 @@ set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part xilinx.com:vc707:part0:1.4 [current_project]
+set_property ip_repo_paths {
+  /home/ukallakuri/hardware_design/designs/ARL_tmp/GS_SLAVE/general_station_07_17/general_station_07_17/general_station_07_17.srcs
+  /home/ukallakuri/hardware_design/designs/ARL_tmp/GS_MASTER/general_station_07_17/general_station_07_17/general_station_07_17.srcs
+} [current_project]
+update_ip_catalog
 set_property ip_output_repo /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog {

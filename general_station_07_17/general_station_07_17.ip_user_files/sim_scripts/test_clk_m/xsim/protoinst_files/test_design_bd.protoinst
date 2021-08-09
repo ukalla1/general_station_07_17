@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"test_design_bd": {
+			"proto_instances": {
+			}
+		}
+	}
+}

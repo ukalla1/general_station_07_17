@@ -1,0 +1,16 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
+| Date         : Tue Aug  3 13:47:08 2021
+| Host         : ukallakuri-Lenovo-YOGA-910-13IKB running 64-bit Ubuntu 20.04.2 LTS
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1761-2
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_design_bd_top_slave_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_design_bd_top_slave_0_0 (user.org:user:top_slave:1.0) from (Rev. 4) to (Rev. 5)
+

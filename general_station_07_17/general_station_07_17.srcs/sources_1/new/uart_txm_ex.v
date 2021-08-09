@@ -41,9 +41,9 @@ module uart_txm_ex #(
     
     localparam BCWIDTH = 8, SCWIDTH = clogb2(SAMPLECOUNTMAX-1);
     
-    (*keep = "true"*) reg [BCWIDTH-1:0] bit_count, cntr = 0;
+    (*keep = "true"*) integer bit_count, cntr = 0;
     
-    (*keep = "true"*) reg [SCWIDTH-1:0] sample_count;
+    (*keep = "true"*) integer sample_count;
     
     (*keep = "true"*) reg [1:0] state;
     

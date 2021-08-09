@@ -1,0 +1,339 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC6B870CC9BE118A5",
+      "device": "xc7vx485tffg1761-2",
+      "name": "test_design_bd",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2018.3",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "clk_wiz_1": "",
+      "top_slave_0": "",
+      "top_0": ""
+    },
+    "interface_ports": {
+      "CLK_IN1_D_0": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          }
+        }
+      },
+      "CLK_IN1_D_1": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:diff_clock_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          }
+        }
+      }
+    },
+    "ports": {
+      "rst_clk_en_0": {
+        "direction": "I"
+      },
+      "CLK_VERIF_OUT_1": {
+        "direction": "O"
+      },
+      "LED_OUT_1": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "rst_1": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst_clk_en_1": {
+        "direction": "I"
+      },
+      "uart_on_1": {
+        "direction": "I"
+      },
+      "uart_serial_out_1": {
+        "direction": "O"
+      },
+      "CLK_VERIF_OUT_0": {
+        "direction": "O"
+      },
+      "LED_OUT_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "trigger_master_0": {
+        "direction": "I"
+      },
+      "uart_on_0": {
+        "direction": "I"
+      },
+      "uart_serial_out_0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "test_design_bd_clk_wiz_0_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "50.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "155.788"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "94.329"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "20"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_diff_clock"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_100M_0_0"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "4.250"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "5.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "42.500"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "PRIM_SOURCE": {
+            "value": "Differential_clock_capable_pin"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "test_design_bd_clk_wiz_0_1",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "50.0"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "155.788"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "94.329"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "20"
+          },
+          "CLK_IN1_BOARD_INTERFACE": {
+            "value": "sys_diff_clock"
+          },
+          "CLK_OUT1_PORT": {
+            "value": "clk_100M_0_0"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "4.250"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "5.000"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "42.500"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "PRIM_SOURCE": {
+            "value": "Differential_clock_capable_pin"
+          },
+          "USE_LOCKED": {
+            "value": "false"
+          },
+          "USE_RESET": {
+            "value": "false"
+          }
+        }
+      },
+      "top_slave_0": {
+        "vlnv": "user.org:user:top_slave:1.0",
+        "xci_name": "test_design_bd_top_slave_0_0"
+      },
+      "top_0": {
+        "vlnv": "user.org:user:top:1.0",
+        "xci_name": "test_design_bd_top_0_0"
+      }
+    },
+    "interface_nets": {
+      "CLK_IN1_D_1_1": {
+        "interface_ports": [
+          "CLK_IN1_D_1",
+          "clk_wiz_0/CLK_IN1_D"
+        ]
+      },
+      "CLK_IN1_D_0_1": {
+        "interface_ports": [
+          "CLK_IN1_D_0",
+          "clk_wiz_1/CLK_IN1_D"
+        ]
+      }
+    },
+    "nets": {
+      "clk_wiz_1_clk_100M_0_0": {
+        "ports": [
+          "clk_wiz_1/clk_100M_0_0",
+          "top_slave_0/clk100M_0"
+        ]
+      },
+      "top_slave_0_CLK_VERIF_OUT": {
+        "ports": [
+          "top_slave_0/CLK_VERIF_OUT",
+          "CLK_VERIF_OUT_1"
+        ]
+      },
+      "top_slave_0_LED_OUT": {
+        "ports": [
+          "top_slave_0/LED_OUT",
+          "LED_OUT_1"
+        ]
+      },
+      "rst_1_1": {
+        "ports": [
+          "rst_1",
+          "top_slave_0/rst"
+        ]
+      },
+      "rst_clk_en_1_1": {
+        "ports": [
+          "rst_clk_en_1",
+          "top_slave_0/rst_clk_en"
+        ]
+      },
+      "uart_on_1_1": {
+        "ports": [
+          "uart_on_1",
+          "top_slave_0/uart_on"
+        ]
+      },
+      "top_slave_0_uart_serial_out": {
+        "ports": [
+          "top_slave_0/uart_serial_out",
+          "uart_serial_out_1"
+        ]
+      },
+      "clk_wiz_0_clk_100M_0_0": {
+        "ports": [
+          "clk_wiz_0/clk_100M_0_0",
+          "top_0/clk100M_0"
+        ]
+      },
+      "top_slave_0_tx_serial_out": {
+        "ports": [
+          "top_slave_0/tx_serial_out",
+          "top_0/rx_serial_in"
+        ]
+      },
+      "top_0_tx_serial_out": {
+        "ports": [
+          "top_0/tx_serial_out",
+          "top_slave_0/rx_serial_in"
+        ]
+      },
+      "top_0_CLK_VERIF_OUT": {
+        "ports": [
+          "top_0/CLK_VERIF_OUT",
+          "CLK_VERIF_OUT_0"
+        ]
+      },
+      "top_0_LED_OUT": {
+        "ports": [
+          "top_0/LED_OUT",
+          "LED_OUT_0"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "top_0/rst"
+        ]
+      },
+      "trigger_master_0_1": {
+        "ports": [
+          "trigger_master_0",
+          "top_0/trigger_master"
+        ]
+      },
+      "uart_on_0_1": {
+        "ports": [
+          "uart_on_0",
+          "top_0/uart_on"
+        ]
+      },
+      "top_0_uart_serial_out": {
+        "ports": [
+          "top_0/uart_serial_out",
+          "uart_serial_out_0"
+        ]
+      },
+      "rst_clk_en_0_1": {
+        "ports": [
+          "rst_clk_en_0",
+          "top_0/rst_clk_en"
+        ]
+      }
+    }
+  }
+}

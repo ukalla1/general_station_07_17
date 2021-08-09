@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (lin64) Build 2405991 Thu Dec  6 23:36:41 MST 2018
-| Date         : Mon Aug  2 12:48:10 2021
+| Date         : Sun Aug  8 09:40:20 2021
 | Host         : ukallakuri-Lenovo-YOGA-910-13IKB running 64-bit Ubuntu 20.04.2 LTS
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -24,7 +24,7 @@ Table of Contents
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
 | Number of unique control sets                            |    38 |
-| Unused register locations in slices containing registers |    80 |
+| Unused register locations in slices containing registers |    99 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,13 +35,14 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      1 |            1 |
+|      2 |            1 |
 |      4 |            6 |
-|      5 |            1 |
 |      7 |            2 |
-|      8 |            2 |
-|      9 |            1 |
+|      8 |           14 |
+|      9 |            4 |
 |     10 |            1 |
-|    16+ |           24 |
+|     11 |            1 |
+|    16+ |            8 |
 +--------+--------------+
 
 
@@ -51,59 +52,59 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             403 |          160 |
-| No           | No                    | Yes                    |               8 |            3 |
-| No           | Yes                   | No                     |             362 |          147 |
-| Yes          | No                    | No                     |              80 |           29 |
+| No           | No                    | No                     |             400 |          168 |
+| No           | No                    | Yes                    |               8 |            2 |
+| No           | Yes                   | No                     |             328 |          136 |
+| Yes          | No                    | No                     |              24 |            8 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |            1403 |          523 |
+| Yes          | Yes                   | No                     |             613 |          266 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------------------------+-------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
-|                 Clock Signal                 |                     Enable Signal                     |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
-+----------------------------------------------+-------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                       | feedback/mmcme2_drp_inst/RST_MMCM                             |                1 |              1 |
-|  design_clk                                  |                                                       | top_sub1/rx_m/rx_m/cntr[6]_i_1__0_n_0                         |                3 |              4 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/next_dwe                     | feedback/mmcme2_drp_inst/FSM_onehot_current_state_reg_n_0_[1] |                1 |              4 |
-|  design_clk                                  | top_sub1/dbuff_mem_addra_uart[3]_i_1_n_0              | rst_IBUF                                                      |                2 |              4 |
-|  design_clk                                  | top_sub1/dbuff_mem_addra[3]_i_1_n_0                   | rst_IBUF                                                      |                3 |              4 |
-|  design_clk                                  | top_sub1/tx_m/tx_in[63]_i_1_n_0                       | rst_IBUF                                                      |                1 |              4 |
-|  design_clk                                  | top_sub1/rx_m/rx_m/sample_5_15                        | rst_IBUF                                                      |                1 |              4 |
-|  design_clk                                  |                                                       |                                                               |                3 |              5 |
-|  design_clk                                  |                                                       | top_sub1/rx_m/rx_m/bit_cnt[6]_i_1_n_0                         |                4 |              7 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/DADDR[6]_i_2_n_0             | feedback/mmcme2_drp_inst/DADDR[6]_i_1_n_0                     |                2 |              7 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                       | sstep                                                         |                3 |              8 |
-|  design_clk                                  | top_sub1/cntr[7]_i_1_n_0                              | rst_IBUF                                                      |                3 |              8 |
-|  design_clk                                  |                                                       | top_sub1/tx_m/tx_m/sample_cnt_i_1_n_0                         |                7 |              9 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/next_ram_addr                | feedback/mmcme2_drp_inst/ram_addr[4]_i_1_n_0                  |                2 |             10 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/next_di                      |                                                               |                4 |             16 |
-|  design_clk                                  |                                                       | top_sub1/tx_m/tx_m/clk_cntr[31]_i_1_n_0                       |                9 |             31 |
-|  design_clk                                  | dbl_uart/counter0_carry__2_n_0                        | dbl_uart/counter[0]_i_1__0_n_0                                |                8 |             32 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                       | feedback/RST0                                                 |               23 |             41 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                       | rst_IBUF                                                      |               15 |             42 |
-|  design_clk                                  | top_sub1/dbuff/en_internal                            |                                                               |               25 |             64 |
-|  design_clk                                  | top_sub1/ts_count_internal[63]_i_1_n_0                | rst_IBUF                                                      |               53 |             64 |
-|  design_clk                                  | top_sub1/trigger_ts                                   | rst_IBUF                                                      |               28 |             64 |
-|  design_clk                                  | top_sub1/referesh_rate[63]_i_1_n_0                    | rst_IBUF                                                      |               16 |             64 |
-|  design_clk                                  | top_sub1/dbuff/wea_comp                               | rst_IBUF                                                      |               25 |             64 |
-|  design_clk                                  | top_sub1/dbuff/dbuff/p_0_in__0_1                      |                                                               |               16 |             64 |
-|  design_clk                                  | top_sub1/dbuff/sub1[63]_i_1_n_0                       | rst_IBUF                                                      |               16 |             64 |
-|  design_clk                                  | top_sub1/rx_m/rx_m/sample_5                           | top_sub1/rx_m/rx_m/rx_shift_reg[63]_i_1_n_0                   |               19 |             64 |
-|  design_clk                                  | top_sub1/rx_m/rx_m/parallel_dout_internal[63]_i_1_n_0 | top_sub1/rx_m/rx_m/rx_shift_reg[63]_i_1_n_0                   |               12 |             64 |
-|  design_clk                                  | top_sub1/rx_m/rx_m/data_valid_internal                | rst_IBUF                                                      |               14 |             64 |
-|  design_clk                                  | top_sub1/dbuff/sub0[63]_i_1_n_0                       | rst_IBUF                                                      |               16 |             64 |
-|  design_clk                                  | top_sub1/dbuff/referesh_cntr_0[63]_i_1_n_0            | rst_IBUF                                                      |               11 |             64 |
-|  design_clk                                  | top_sub1/dbuff/num1[63]_i_1_n_0                       | rst_IBUF                                                      |               11 |             64 |
-|  design_clk                                  | top_sub1/dbuff/num0[63]_i_1_n_0                       | rst_IBUF                                                      |               12 |             64 |
-|  design_clk                                  | top_sub1/dbuff/tmp_delta[64]_i_1_n_0                  | rst_IBUF                                                      |               17 |             64 |
-|  design_clk                                  | top_sub1/referesh_cntr_reg1[63]_i_1_n_0               | rst_IBUF                                                      |               23 |             65 |
-|  design_clk                                  |                                                       | rst_IBUF                                                      |               85 |            227 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                       |                                                               |              157 |            398 |
-|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/reg_bank/reg_wen             | feedback/RST0                                                 |              227 |            429 |
-+----------------------------------------------+-------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
++----------------------------------------------+------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|                 Clock Signal                 |                     Enable Signal                    |                        Set/Reset Signal                       | Slice Load Count | Bel Load Count |
++----------------------------------------------+------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                      | feedback/mmcme2_drp_inst/RST_MMCM                             |                1 |              1 |
+|  design_clk                                  |                                                      |                                                               |                2 |              2 |
+|  design_clk                                  | top_sub1/dbuff_mem_addra_uart[3]_i_1_n_0             | rst_IBUF                                                      |                2 |              4 |
+|  design_clk                                  | top_sub1/dbuff_mem_addra[3]_i_1_n_0                  | rst_IBUF                                                      |                2 |              4 |
+|  design_clk                                  | top_sub1/tx_m/tx_in[7]_i_1_n_0                       | rst_IBUF                                                      |                1 |              4 |
+|  design_clk                                  | top_sub1/rx_m/rx_m/sample_5_15                       | rst_IBUF                                                      |                1 |              4 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/next_dwe                    | feedback/mmcme2_drp_inst/FSM_onehot_current_state_reg_n_0_[1] |                1 |              4 |
+|  design_clk                                  |                                                      | top_sub1/rx_m/rx_m/cntr[6]_i_1__0_n_0                         |                2 |              4 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/DADDR[6]_i_2_n_0            | feedback/mmcme2_drp_inst/DADDR[6]_i_1_n_0                     |                2 |              7 |
+|  design_clk                                  |                                                      | top_sub1/rx_m/rx_m/bit_cnt[6]_i_1_n_0                         |                2 |              7 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                      | sstep                                                         |                2 |              8 |
+|  design_clk                                  | top_sub1/dbuff/wea_comp                              | rst_IBUF                                                      |                2 |              8 |
+|  design_clk                                  | top_sub1/dbuff/dbuff/p_0_in__1                       |                                                               |                2 |              8 |
+|  design_clk                                  | top_sub1/dbuff/num1[7]_i_1_n_0                       | rst_IBUF                                                      |                2 |              8 |
+|  design_clk                                  | top_sub1/rx_m/rx_m/parallel_dout_internal[7]_i_1_n_0 | top_sub1/rx_m/rx_m/rx_shift_reg[7]_i_1_n_0                    |                1 |              8 |
+|  design_clk                                  | top_sub1/dbuff/tmp_delta[8]_i_1_n_0                  | rst_IBUF                                                      |                3 |              8 |
+|  design_clk                                  | top_sub1/dbuff/en_internal                           |                                                               |                3 |              8 |
+|  design_clk                                  | top_sub1/dbuff/num0[7]_i_1_n_0                       | rst_IBUF                                                      |                2 |              8 |
+|  design_clk                                  | top_sub1/cntr[7]_i_1__1_n_0                          | rst_IBUF                                                      |                5 |              8 |
+|  design_clk                                  | top_sub1/referesh_rate[7]_i_1_n_0                    | rst_IBUF                                                      |                2 |              8 |
+|  design_clk                                  | top_sub1/dbuff/referesh_cntr_0[7]_i_1_n_0            | rst_IBUF                                                      |                1 |              8 |
+|  design_clk                                  | top_sub1/ts_count_internal[7]_i_1_n_0                | rst_IBUF                                                      |                5 |              8 |
+|  design_clk                                  | top_sub1/trigger_ts                                  | rst_IBUF                                                      |                5 |              8 |
+|  design_clk                                  | top_sub1/rx_m/rx_m/data_valid_internal               | rst_IBUF                                                      |                1 |              8 |
+|  design_clk                                  | top_sub1/dbuff/sub1[8]_i_1_n_0                       | rst_IBUF                                                      |                3 |              9 |
+|  design_clk                                  | top_sub1/referesh_cntr_reg1[7]_i_1_n_0               | rst_IBUF                                                      |                3 |              9 |
+|  design_clk                                  | top_sub1/dbuff/sub0[8]_i_1_n_0                       | rst_IBUF                                                      |                3 |              9 |
+|  design_clk                                  |                                                      | top_sub1/tx_m/tx_m/sample_cnt_i_1_n_0                         |                6 |              9 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/next_ram_addr               | feedback/mmcme2_drp_inst/ram_addr[4]_i_1_n_0                  |                3 |             10 |
+|  design_clk                                  |                                                      | top_sub1/rx_m/rx_m/rx_shift_reg[7]_i_1_n_0                    |                4 |             11 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/next_di                     |                                                               |                5 |             16 |
+|  design_clk                                  |                                                      | top_sub1/tx_m/tx_m/clk_cntr[31]_i_1_n_0                       |                9 |             31 |
+|  design_clk                                  | dbl_rst_clk_en/counter0_carry__2_n_3                 | dbl_rst_clk_en/counter[0]_i_1__0_n_0                          |                8 |             32 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                      | mmcm_clk_rst                                                  |               16 |             41 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                      | rst_IBUF                                                      |               14 |             42 |
+|  design_clk                                  |                                                      | rst_IBUF                                                      |               82 |            182 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 |                                                      |                                                               |              166 |            398 |
+|  top_sub0/design_1_i/clk_wiz_0/inst/clk_out1 | feedback/mmcme2_drp_inst/reg_bank/reg_wen            | mmcm_clk_rst                                                  |              208 |            429 |
++----------------------------------------------+------------------------------------------------------+---------------------------------------------------------------+------------------+----------------+
 
 

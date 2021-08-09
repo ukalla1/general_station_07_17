@@ -1,0 +1,51 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat Aug  7 23:18:23 2021
+# Process ID: 3206
+# Current directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
+# Command line: vivado
+# Log file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
+# Journal file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ukallakuri/hardware_design/designs/ARL_tmp/GS_SLAVE/general_station_07_17/general_station_07_17/general_station_07_17.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ukallakuri/hardware_design/designs/ARL_tmp/GS_MASTER/general_station_07_17/general_station_07_17/general_station_07_17.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 6418.957 ; gain = 167.527 ; free physical = 3021 ; free virtual = 7510
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Aug  7 23:20:40 2021] Launched synth_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/runme.log
+[Sat Aug  7 23:20:40 2021] Launched impl_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Aug  7 23:27:54 2021] Launched synth_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/runme.log
+[Sat Aug  7 23:27:54 2021] Launched impl_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Aug  7 23:37:00 2021] Launched synth_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/runme.log
+[Sat Aug  7 23:37:00 2021] Launched impl_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Sat Aug  7 23:44:26 2021] Launched synth_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/synth_1/runme.log
+[Sat Aug  7 23:44:26 2021] Launched impl_1...
+Run output will be captured here: /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Aug  7 23:58:33 2021...

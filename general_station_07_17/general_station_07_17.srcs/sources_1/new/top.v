@@ -59,7 +59,7 @@ module top(
         (*keep = "true"*) wire trigger_slave_internal;
         (*keep = "true"*) wire [`DATAWIDTH-1:0] phase_computed_tmp;
         
-        (*keep = "true"*) wire uart_on_internal;
+        (*keep = "true"*) reg uart_on_internal;
         
         localparam phase = 360000, phase_sel = 5'b00000, divide = 12;
     
@@ -75,8 +75,10 @@ module top(
         (*keep = "true"*) reg clk_param_en = 0, clk_param_wen = 0, PSEN = 0, PSID = 0 , sstep = 0;
         
         `ifndef MASTER
-        (*keep = "true"*) wire pts_trigger; 
+        (*keep = "true"*) reg pts_trigger, pts_trigger_internal; 
         `endif
+        
+        (*keep = "true"*) wire rst_clk_en_internal, mmcm_clk_rst;
         
         integer cntr = 0;
 //    `endif
@@ -104,7 +106,7 @@ module top(
         
         .SSTEP (sstep),
 //        input    STATE,
-        .RST (rst & rst_clk_en),
+        .RST (mmcm_clk_rst),
         .CLKIN (clk100M_0),
         .CLKIN2 (1'b0),
         .CLKINSEL (1'b1),
@@ -141,15 +143,26 @@ module top(
     );
     
     debounce_logic #(
-//        .clock_frequency ((`RXF) * (1000000)),
-        .clock_frequency ((`RXF)),
+        .clock_frequency ((`RXF) * (1000000)),
+//        .clock_frequency ((`RXF)),
         .stable_time (10)
-    )dbl_uart(
-        .button_out (uart_on_internal),
-        .button_in (uart_on),
+    )dbl_rst_clk_en(
+        .button_out (rst_clk_en_internal),
+        .button_in (rst_clk_en),
         .clk (design_clk),
         .rst (rst)
     );
+    
+//    debounce_logic #(
+////        .clock_frequency ((`RXF) * (1000000)),
+//        .clock_frequency ((`RXF)),
+//        .stable_time (10)
+//    )dbl_uart(
+//        .button_out (uart_on_internal),
+//        .button_in (uart_on),
+//        .clk (clk100M_0),
+//        .rst (rst)
+//    );
     
     design_top_temp top_sub1(
         .clk100M(design_clk),
@@ -163,7 +176,7 @@ module top(
             .s_rx_err(s_rx_err),
             .phase_computed_tmp(phase_computed_tmp),
             .re_prog_on(re_prog_on),
-            .pts_trigger(pts_trigger),
+            .pts_trigger(pts_trigger_internal),
         `endif
         .rx_serial_in(rx_serial_in),
         .tx_serial_out(tx_serial_out),
@@ -181,6 +194,8 @@ module top(
     
     BUFG design_Clk_buf(.I(design_clk_ttmp), .O(design_clk));
     
+    assign mmcm_clk_rst = rst & rst_clk_en_internal;
+    
     always @(posedge design_clk) begin
         if(rst) begin
             re_prog_on0 <= 0;
@@ -188,6 +203,7 @@ module top(
             re_prog_on2 <= 0;
             re_prog_on3 <= 0;
             re_prog_on4 <= 0;
+            uart_on_internal <= 0;
         end
         else begin
             re_prog_on0 <= re_prog_on;
@@ -195,18 +211,32 @@ module top(
             re_prog_on2 <= re_prog_on1;
             re_prog_on3 <= re_prog_on2;
             re_prog_on4 <= re_prog_on4;
+            uart_on_internal <= uart_on;
         end
     end
     
     assign re_prog_on_internal = re_prog_on0 | re_prog_on1 | re_prog_on2 | re_prog_on3 | re_prog_on4 | re_prog_on;
     
-    `ifndef MASTER
-    assign pts_trigger = re_prog_on;
-    `endif
+//    `ifndef MASTER
+//    assign pts_trigger = re_prog_on;
+//    `endif
     
-    assign LED_OUT = LED_OUT_internal[15:8];
+    assign LED_OUT = LED_OUT_internal[8-1:0];
     
     assign design_clk_ttmp = design_clk_tmp & locked;
+    
+    `ifdef SLAVE
+    always @(posedge design_clk) begin
+        if(rst) begin
+            pts_trigger <= 0;
+            pts_trigger_internal <= 0;
+        end
+        else begin
+            pts_trigger <= re_prog_on;
+            pts_trigger_internal <= pts_trigger;
+        end
+    end
+    `endif
     
     always @(posedge clk100M_0) begin
 //        rst_reg <= rst;
@@ -221,8 +251,11 @@ module top(
             cntr <= 0;
             sstep <= 0;
 //            pts_trigger <= 0;
+//            pts_trigger_internal <= 0;
         end
         else begin
+//            pts_trigger <= re_prog_on;
+//            pts_trigger_internal <= pts_trigger;
             case(state)
                 idle: begin
                     if(re_prog_on_internal) begin

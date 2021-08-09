@@ -72,6 +72,11 @@ set rc [catch {
   set_param project.singleFileAddWarning.threshold 0
   set_property webtalk.parent_dir /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/wt [current_project]
   set_property parent.project_path /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr [current_project]
+  set_property ip_repo_paths {
+  /home/ukallakuri/hardware_design/designs/ARL_tmp/GS_SLAVE/general_station_07_17/general_station_07_17/general_station_07_17.srcs
+  /home/ukallakuri/hardware_design/designs/ARL_tmp/GS_MASTER/general_station_07_17/general_station_07_17/general_station_07_17.srcs
+} [current_project]
+  update_ip_catalog
   set_property ip_output_repo /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
