@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../axi_iic_0_ex.gen/sources_1/ip/axi_iic_0/sim/axi_iic_0.vhd" \
+"../../../../imports/axi_iic_0_exdes.vhd" \
+"../../../../imports/clock_gen.vhd" \
+"../../../../imports/axi_iic_0_exdes_tb.vhd" \
+
+# Do not sort compile order
+nosort

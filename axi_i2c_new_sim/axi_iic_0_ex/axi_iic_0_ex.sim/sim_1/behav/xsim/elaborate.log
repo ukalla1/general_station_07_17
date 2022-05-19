@@ -1,0 +1,123 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 8b116b0f2b204b4fb3146b9f7187529e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L lib_pkg_v1_0_2 -L lib_cdc_v1_0_2 -L axi_lite_ipif_v3_0_4 -L interrupt_control_v3_1_4 -L axi_iic_v2_1_0 -L dist_mem_gen_v8_0_13 -L blk_mem_gen_v8_4_4 -L lib_bmg_v1_0_13 -L axi_traffic_gen_v3_0_10 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axi_iic_0_exdes_tb_behav xil_defaultlib.axi_iic_0_exdes_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'wea' [/wrk/ci/prod/2021.1/sw/continuous/3932/packages/customer/vivado/data/ip/xilinx/axi_traffic_gen_v3_0/hdl/axi_traffic_gen_v3_0_rfs.v:13850]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package ieee.std_logic_textio
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package axi_iic_v2_1_0.iic_pkg
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=9.125...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
+Compiling architecture impl of entity xil_defaultlib.clock_gen [clock_gen_default]
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_asynch_r...
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=1,c_mtb...]
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=102...
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_systemin...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=102...
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_systemin...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=102...
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_systemin...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=0,ME...
+Compiling module xpm.xpm_memory_spram(MEMORY_SIZE=102...
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_systemin...
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_static_c...
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_systemin...
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_systemin...
+Compiling module axi_traffic_gen_v3_0_10.axi_traffic_gen_v3_0_10_top(C_FA...
+Compiling module xil_defaultlib.axi_traffic_gen_0
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=3,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=4,c_aw=4,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=7,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=1,c_aw=9,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=5,c_aw=5,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture implementation of entity interrupt_control_v3_1_4.interrupt_control [\interrupt_control(c_num_ce=16,c...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111001010")(0...]
+Compiling architecture fdrse_v of entity unisim.FDRSE [fdrse_default]
+Compiling architecture implementation of entity axi_iic_v2_1_0.soft_reset [soft_reset_default]
+Compiling architecture rtl of entity axi_iic_v2_1_0.axi_ipif_ssp1 [\axi_ipif_ssp1(c_num_iic_regs=18...]
+Compiling architecture rtl of entity axi_iic_v2_1_0.reg_interface [\reg_interface(c_scl_inertial_de...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_mtbf_stages=4)\]
+Compiling architecture rtl of entity axi_iic_v2_1_0.debounce [\debounce(c_inertial_delay=0)\]
+Compiling architecture rtl of entity axi_iic_v2_1_0.filter [\filter(scl_inertial_delay=0,sda...]
+Compiling architecture rtl of entity axi_iic_v2_1_0.upcnt_n [\upcnt_n(c_size=8)\]
+Compiling architecture rtl of entity axi_iic_v2_1_0.shift8 [shift8_default]
+Compiling architecture rtl of entity axi_iic_v2_1_0.upcnt_n [\upcnt_n(c_size=4)\]
+Compiling architecture rtl of entity axi_iic_v2_1_0.iic_control [\iic_control(c_scl_inertial_dela...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture imp of entity axi_iic_v2_1_0.SRL_FIFO [\SRL_FIFO(c_depth=4)\]
+Compiling architecture rtl of entity axi_iic_v2_1_0.dynamic_master [dynamic_master_default]
+Compiling architecture imp of entity axi_iic_v2_1_0.SRL_FIFO [\SRL_FIFO(c_data_bits=2,c_depth=...]
+Compiling architecture rtl of entity axi_iic_v2_1_0.iic [\iic(c_num_iic_regs=18,c_s_axi_a...]
+Compiling architecture rtl of entity axi_iic_v2_1_0.axi_iic [\axi_iic(c_family="artix7",c_def...]
+Compiling architecture axi_iic_0_arch of entity xil_defaultlib.axi_iic_0 [axi_iic_0_default]
+Compiling architecture iobuf_v of entity unisim.IOBUF [\IOBUF(1,7)(1,4)\]
+Compiling architecture impl of entity xil_defaultlib.axi_iic_0_exdes [axi_iic_0_exdes_default]
+Compiling architecture pullup_v of entity unisim.PULLUP [pullup_default]
+Compiling architecture tb of entity xil_defaultlib.axi_iic_0_exdes_tb
+Built simulation snapshot axi_iic_0_exdes_tb_behav

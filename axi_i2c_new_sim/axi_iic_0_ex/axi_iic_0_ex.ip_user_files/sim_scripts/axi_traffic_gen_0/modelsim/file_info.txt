@@ -1,0 +1,11 @@
+xpm_cdc.sv,systemverilog,xpm,../../../../../../../../Xilinx/Vivado/2021.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+xpm_memory.sv,systemverilog,xpm,../../../../../../../../Xilinx/Vivado/2021.1/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../Xilinx/Vivado/2021.1/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+dist_mem_gen_v8_0.v,verilog,dist_mem_gen_v8_0_13,../../../ipstatic/simulation/dist_mem_gen_v8_0.v,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+blk_mem_gen_v8_4.v,verilog,blk_mem_gen_v8_4_4,../../../ipstatic/simulation/blk_mem_gen_v8_4.v,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+lib_bmg_v1_0_rfs.vhd,vhdl,lib_bmg_v1_0_13,../../../ipstatic/hdl/lib_bmg_v1_0_rfs.vhd,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+lib_cdc_v1_0_rfs.vhd,vhdl,lib_cdc_v1_0_2,../../../ipstatic/hdl/lib_cdc_v1_0_rfs.vhd,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+axi_traffic_gen_v3_0_rfs.vhd,vhdl,axi_traffic_gen_v3_0_10,../../../ipstatic/hdl/axi_traffic_gen_v3_0_rfs.vhd,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+axi_traffic_gen_v3_0_rfs.v,verilog,axi_traffic_gen_v3_0_10,../../../ipstatic/hdl/axi_traffic_gen_v3_0_rfs.v,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+axi_traffic_gen_0.v,verilog,xil_defaultlib,../../../../axi_iic_0_ex.gen/sources_1/ip/axi_traffic_gen_0/sim/axi_traffic_gen_0.v,incdir="../../../ipstatic/hdl/src/verilog"incdir="../../../ipstatic/hdl/src/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

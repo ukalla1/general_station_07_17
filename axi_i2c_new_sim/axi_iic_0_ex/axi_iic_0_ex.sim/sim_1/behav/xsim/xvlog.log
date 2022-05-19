@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_iic_0_ex/axi_iic_0_ex.gen/sources_1/ip/axi_traffic_gen_0/sim/axi_traffic_gen_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_traffic_gen_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_iic_0_ex/axi_iic_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_iic_0_ex/axi_iic_0_ex.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_wiz_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_iic_0_ex/axi_iic_0_ex.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

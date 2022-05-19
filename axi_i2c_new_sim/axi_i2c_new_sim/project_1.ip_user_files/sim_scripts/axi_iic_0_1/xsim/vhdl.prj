@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../../../../Q1_FY19/uart_clock_value/fpga-common/axi_iic_0_1/sim/axi_iic_0.vhd" \
+
+nosort
