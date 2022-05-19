@@ -16,7 +16,7 @@
     `define DATAWIDTH 8                    //Width of the data bits
     
 //    `define PREAMBLE 8'b1100_1100           //The first data that is transferred
-    `define PREAMBLE {(4){2'b10}}           //The first data that is transferred 
+    `define PREAMBLE {(`DATAWIDTH/2){2'b10}}           //The first data that is transferred 
     
 //    `define RAM_DEPTH 4                    //Memory size, 8 bits per location
 //    `define RAM_ADDRSWIDTH_M 2

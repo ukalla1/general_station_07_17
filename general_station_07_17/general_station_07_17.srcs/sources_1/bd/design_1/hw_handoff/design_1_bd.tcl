@@ -161,21 +161,21 @@ proc create_root_design { parentCell } {
   # Create ports
   set clk_out1_0 [ create_bd_port -dir O -type clk clk_out1_0 ]
   set_property -dict [ list \
-   CONFIG.FREQ_HZ {20000000} \
+   CONFIG.FREQ_HZ {100000000} \
  ] $clk_out1_0
 
   # Create instance: clk_wiz_0, and set properties
   set clk_wiz_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:clk_wiz:6.0 clk_wiz_0 ]
   set_property -dict [ list \
    CONFIG.CLKIN1_JITTER_PS {50.0} \
-   CONFIG.CLKOUT1_JITTER {155.788} \
-   CONFIG.CLKOUT1_PHASE_ERROR {94.329} \
-   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {20} \
+   CONFIG.CLKOUT1_JITTER {112.316} \
+   CONFIG.CLKOUT1_PHASE_ERROR {89.971} \
+   CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} \
    CONFIG.CLK_IN1_BOARD_INTERFACE {sys_diff_clock} \
-   CONFIG.MMCM_CLKFBOUT_MULT_F {4.250} \
+   CONFIG.MMCM_CLKFBOUT_MULT_F {5.000} \
    CONFIG.MMCM_CLKIN1_PERIOD {5.000} \
    CONFIG.MMCM_CLKIN2_PERIOD {10.0} \
-   CONFIG.MMCM_CLKOUT0_DIVIDE_F {42.500} \
+   CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} \
    CONFIG.MMCM_DIVCLK_DIVIDE {1} \
    CONFIG.PRIM_SOURCE {Differential_clock_capable_pin} \
    CONFIG.USE_LOCKED {false} \

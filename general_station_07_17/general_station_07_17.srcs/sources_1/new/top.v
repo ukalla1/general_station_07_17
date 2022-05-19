@@ -56,29 +56,29 @@ module top(
         (*keep = "true"*) wire trigger_master_internal;
 //    `else
         wire s_rx_err;
-        (*keep = "true"*) wire trigger_slave_internal;
+        (*keep = "true"*) wire trigger_slave_internal, re_prog_on;
         (*keep = "true"*) wire [`DATAWIDTH-1:0] phase_computed_tmp;
         
         (*keep = "true"*) reg uart_on_internal;
         
-        localparam phase = 360000, phase_sel = 5'b00000, divide = 12;
+//        localparam phase = 360000, phase_sel = 5'b00000, divide = 12;
     
-        (*keep = "true"*) wire drp_ready, locked, design_clk_tmp, re_prog_on, re_prog_on_internal, PSDONE;
+//        (*keep = "true"*) wire drp_ready, locked, design_clk_tmp, re_prog_on, re_prog_on_internal, PSDONE;
         
-        (*gated_clock = "yes"*) wire design_clk, design_clk_ttmp;
+//        (*gated_clock = "yes"*) wire design_clk, design_clk_ttmp;
         
-        (*keep = "true"*) reg re_prog_on0, re_prog_on1, re_prog_on2, re_prog_on3, re_prog_on4; 
+//        (*keep = "true"*) reg re_prog_on0, re_prog_on1, re_prog_on2, re_prog_on3, re_prog_on4; 
         
-        (*keep = "true"*) reg [32-1:0] clk_param_in = 0;
-        (*keep = "true"*) wire [32-1:0] clk_param_out;
-        (*keep = "true"*) reg [4:0] clk_param_sel;
-        (*keep = "true"*) reg clk_param_en = 0, clk_param_wen = 0, PSEN = 0, PSID = 0 , sstep = 0;
+//        (*keep = "true"*) reg [32-1:0] clk_param_in = 0;
+//        (*keep = "true"*) wire [32-1:0] clk_param_out;
+//        (*keep = "true"*) reg [4:0] clk_param_sel;
+//        (*keep = "true"*) reg clk_param_en = 0, clk_param_wen = 0, PSEN = 0, PSID = 0 , sstep = 0;
         
         `ifndef MASTER
         (*keep = "true"*) reg pts_trigger, pts_trigger_internal; 
         `endif
         
-        (*keep = "true"*) wire rst_clk_en_internal, mmcm_clk_rst;
+//        (*keep = "true"*) wire rst_clk_en_internal, mmcm_clk_rst;
         
         integer cntr = 0;
 //    `endif
@@ -102,33 +102,33 @@ module top(
 //    );
     
 //    `ifdef SLAVE
-    top_mmcme2 feedback(
+//    top_mmcme2 feedback(
         
-        .SSTEP (sstep),
-//        input    STATE,
-        .RST (mmcm_clk_rst),
-        .CLKIN (clk100M_0),
-        .CLKIN2 (1'b0),
-        .CLKINSEL (1'b1),
-        .SRDY (drp_ready),
- 		.LOCKED_OUT (locked),
-        .CLK0OUT (design_clk_tmp),
-        //
-        .clk_param_in (clk_param_in),
-        .clk_param_sel (clk_param_sel),
-        .clk_param_en (clk_param_en),
-        .clk_param_wen (clk_param_wen),
-        .clk_param_out (clk_param_out),
-        //
-        .PSDONE (PSDONE),
-        .PSEN (PSEN),
-        .PSINCDEC (PSID)
-    );
+//        .SSTEP (sstep),
+////        input    STATE,
+//        .RST (mmcm_clk_rst),
+//        .CLKIN (clk100M_0),
+//        .CLKIN2 (1'b0),
+//        .CLKINSEL (1'b1),
+//        .SRDY (drp_ready),
+// 		.LOCKED_OUT (locked),
+//        .CLK0OUT (design_clk_tmp),
+//        //
+//        .clk_param_in (clk_param_in),
+//        .clk_param_sel (clk_param_sel),
+//        .clk_param_en (clk_param_en),
+//        .clk_param_wen (clk_param_wen),
+//        .clk_param_out (clk_param_out),
+//        //
+//        .PSDONE (PSDONE),
+//        .PSEN (PSEN),
+//        .PSINCDEC (PSID)
+//    );
 //    `endif
     
     debounce_logic #(
-        .clock_frequency ((`RXF) * (1000000)),
-//        .clock_frequency ((`RXF)),
+//        .clock_frequency ((`RXF) * (1000000)),
+        .clock_frequency ((`RXF)),
         .stable_time (10)
     )dbl(
         `ifdef MASTER
@@ -138,20 +138,20 @@ module top(
 //        .button_out (trigger_slave_internal),
 //        .button_in (trigger_slave),
         `endif
-        .clk (design_clk),
+        .clk (clk100M_0),
         .rst (rst)
     );
     
-    debounce_logic #(
-        .clock_frequency ((`RXF) * (1000000)),
+//    debounce_logic #(
+////        .clock_frequency ((`RXF) * (1000000)),
 //        .clock_frequency ((`RXF)),
-        .stable_time (10)
-    )dbl_rst_clk_en(
-        .button_out (rst_clk_en_internal),
-        .button_in (rst_clk_en),
-        .clk (design_clk),
-        .rst (rst)
-    );
+//        .stable_time (10)
+//    )dbl_rst_clk_en(
+//        .button_out (rst_clk_en_internal),
+//        .button_in (rst_clk_en),
+//        .clk (clk100M_0),
+//        .rst (rst)
+//    );
     
 //    debounce_logic #(
 ////        .clock_frequency ((`RXF) * (1000000)),
@@ -165,7 +165,7 @@ module top(
 //    );
     
     design_top_temp top_sub1(
-        .clk100M(design_clk),
+        .clk100M(clk100M_0),
         .clk20M(0),
         .rst(rst),
         `ifdef MASTER
@@ -190,32 +190,32 @@ module top(
     );
     
     
-    ODDR ODDR_CLKOUT (.Q(CLK_VERIF_OUT), .C(design_clk), .CE(1'b1), .D1(1'b1), .D2(1'b0), .R(rst), .S(1'b0));
+    ODDR ODDR_CLKOUT (.Q(CLK_VERIF_OUT), .C(clk100M_0), .CE(1'b1), .D1(1'b1), .D2(1'b0), .R(rst), .S(1'b0));
     
-    BUFG design_Clk_buf(.I(design_clk_ttmp), .O(design_clk));
+//    BUFG design_Clk_buf(.I(design_clk_ttmp), .O(design_clk));
     
-    assign mmcm_clk_rst = rst & rst_clk_en_internal;
+//    assign mmcm_clk_rst = rst & rst_clk_en_internal;
     
-    always @(posedge design_clk) begin
+    always @(posedge clk100M_0) begin
         if(rst) begin
-            re_prog_on0 <= 0;
-            re_prog_on1 <= 0;
-            re_prog_on2 <= 0;
-            re_prog_on3 <= 0;
-            re_prog_on4 <= 0;
+//            re_prog_on0 <= 0;
+//            re_prog_on1 <= 0;
+//            re_prog_on2 <= 0;
+//            re_prog_on3 <= 0;
+//            re_prog_on4 <= 0;
             uart_on_internal <= 0;
         end
         else begin
-            re_prog_on0 <= re_prog_on;
-            re_prog_on1 <= re_prog_on0;
-            re_prog_on2 <= re_prog_on1;
-            re_prog_on3 <= re_prog_on2;
-            re_prog_on4 <= re_prog_on4;
+//            re_prog_on0 <= re_prog_on;
+//            re_prog_on1 <= re_prog_on0;
+//            re_prog_on2 <= re_prog_on1;
+//            re_prog_on3 <= re_prog_on2;
+//            re_prog_on4 <= re_prog_on4;
             uart_on_internal <= uart_on;
         end
     end
     
-    assign re_prog_on_internal = re_prog_on0 | re_prog_on1 | re_prog_on2 | re_prog_on3 | re_prog_on4 | re_prog_on;
+//    assign re_prog_on_internal = re_prog_on0 | re_prog_on1 | re_prog_on2 | re_prog_on3 | re_prog_on4 | re_prog_on;
     
 //    `ifndef MASTER
 //    assign pts_trigger = re_prog_on;
@@ -223,10 +223,10 @@ module top(
     
     assign LED_OUT = LED_OUT_internal[8-1:0];
     
-    assign design_clk_ttmp = design_clk_tmp & locked;
+//    assign design_clk_ttmp = design_clk_tmp & locked;
     
     `ifdef SLAVE
-    always @(posedge design_clk) begin
+    always @(posedge clk100M_0) begin
         if(rst) begin
             pts_trigger <= 0;
             pts_trigger_internal <= 0;
@@ -238,84 +238,84 @@ module top(
     end
     `endif
     
-    always @(posedge clk100M_0) begin
-//        rst_reg <= rst;
+//    always @(posedge clk100M_0) begin
+////        rst_reg <= rst;
         
-        `ifdef SLAVE
-        if(rst) begin
-            state <= idle;
-            clk_param_sel <= 0;
-            clk_param_in <= 0;
-            clk_param_en <= 1'b0;
-            clk_param_wen <= 1'b0;
-            cntr <= 0;
-            sstep <= 0;
-//            pts_trigger <= 0;
-//            pts_trigger_internal <= 0;
-        end
-        else begin
-//            pts_trigger <= re_prog_on;
-//            pts_trigger_internal <= pts_trigger;
-            case(state)
-                idle: begin
-                    if(re_prog_on_internal) begin
-                        if(!locked) begin
-                            state <= idle;
-                        end
-                        else begin
-                            state <= s1;
-//                            pts_trigger <= 1'b1;
-                            cntr <= phase_computed_tmp;
-                        end
-                    end
-                    else begin
-                        state <= idle;
-                        clk_param_sel <= 0;
-                        clk_param_in <= 0;
-                        clk_param_en <= 1'b0;
-                        clk_param_wen <= 1'b0;
-                    end
-                end
-                
-                s1: begin
-//                    pts_trigger <= 1'b0;
-                    sstep <= 1'b0;
-//                    if(cntr > 0) begin
-                        clk_param_sel <= phase_sel;
-                        clk_param_in <= divide;
-                        clk_param_en <= 1'b1;
-                        clk_param_wen <= 1'b1;
-                        state <= s2;
+//        `ifdef SLAVE
+//        if(rst) begin
+//            state <= idle;
+////            clk_param_sel <= 0;
+////            clk_param_in <= 0;
+////            clk_param_en <= 1'b0;
+////            clk_param_wen <= 1'b0;
+//            cntr <= 0;
+////            sstep <= 0;
+////            pts_trigger <= 0;
+////            pts_trigger_internal <= 0;
+//        end
+//        else begin
+////            pts_trigger <= re_prog_on;
+////            pts_trigger_internal <= pts_trigger;
+//            case(state)
+//                idle: begin
+//                    if(re_prog_on) begin
+//                        if(!locked) begin
+//                            state <= idle;
+//                        end
+//                        else begin
+//                            state <= s1;
+////                            pts_trigger <= 1'b1;
+//                            cntr <= phase_computed_tmp;
+//                        end
 //                    end
 //                    else begin
 //                        state <= idle;
+//                        clk_param_sel <= 0;
+//                        clk_param_in <= 0;
+//                        clk_param_en <= 1'b0;
+//                        clk_param_wen <= 1'b0;
 //                    end
-                end
+//                end
                 
-                s2: begin
-                    state <= s3;
-                    clk_param_sel <= 0;
-                    clk_param_in <= 0;
-                    clk_param_en <= 1'b0;
-                    clk_param_wen <= 1'b0;
-                    sstep <= 1'b1;
-                end
+//                s1: begin
+////                    pts_trigger <= 1'b0;
+//                    sstep <= 1'b0;
+////                    if(cntr > 0) begin
+//                        clk_param_sel <= phase_sel;
+//                        clk_param_in <= divide;
+//                        clk_param_en <= 1'b1;
+//                        clk_param_wen <= 1'b1;
+//                        state <= s2;
+////                    end
+////                    else begin
+////                        state <= idle;
+////                    end
+//                end
                 
-                s3: begin
-                    if(drp_ready) begin
-                        sstep <= 1'b0;
-//                        state <= s1;
-                        state <= idle;
-                        cntr <= cntr - 1'b1;
-                    end
-                    else begin
-                        sstep <= 1'b0;
-                        state <= s3;
-                    end
-                end
-            endcase
-        end
-        `endif
+//                s2: begin
+//                    state <= s3;
+//                    clk_param_sel <= 0;
+//                    clk_param_in <= 0;
+//                    clk_param_en <= 1'b0;
+//                    clk_param_wen <= 1'b0;
+//                    sstep <= 1'b1;
+//                end
+                
+//                s3: begin
+//                    if(drp_ready) begin
+//                        sstep <= 1'b0;
+////                        state <= s1;
+//                        state <= idle;
+//                        cntr <= cntr - 1'b1;
+//                    end
+//                    else begin
+//                        sstep <= 1'b0;
+//                        state <= s3;
+//                    end
+//                end
+//            endcase
+//        end
+//        `endif
         
 //        if(rst_reg) begin
 //            `ifdef MASTER
@@ -324,6 +324,6 @@ module top(
 //            tmp_trigger <= trigger_slave_internal;
 //            `endif
 //        end
-    end
+//    end
     
 endmodule

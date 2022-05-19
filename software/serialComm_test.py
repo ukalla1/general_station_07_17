@@ -35,6 +35,53 @@ class mySer():
 		self.rx_data = self.ser.read(bytes)
 		return self.rx_data 
 
+def dec_2_bin(num):
+	# if num >= 1:
+	# 	bin_val = dec_2_bin(num // 2)
+	# 	return (num % 2)
+	decimal = int(num)
+	binary = 0
+	cntr = 0
+	tmp = decimal
+
+	while(tmp > 0):
+		binary = ((tmp%2)*(10**cntr)) + binary
+		tmp = int(tmp/2)
+		cntr += 1
+
+	return binary
+
+def process_rx_in(file_loc):
+	i = 0
+	j = 0
+	f = open(file_loc, 'r')
+	my_file_lines = f.read()
+	my_file_lines = my_file_lines.split('\n')
+	# print(my_file_lines)
+	while (i <= 55):
+
+		if (j == 0):
+			val = dec_2_bin(my_file_lines[i])
+			j += 1
+			i += 1
+		elif (j <= 7):
+			val += dec_2_bin(my_file_lines[i])
+			j += 1
+			i += 1
+		else:
+			j = 0
+			i = i
+			print(val)
+
+	# 	val = []
+	# 	j = 0
+	# 	while(j <= 7):
+	# 		val += my_file_lines[i+j]
+	# 		j += 1
+	# 	i += 1
+	# 	print(val)
+
+	return 0
 
 
 
@@ -46,7 +93,7 @@ if __name__== "__main__":
 	s = mySer()
 	s.open_serial_port('/dev/ttyUSB0')
 	r = s.receive_serial((mem_size*64))
-	print(r)
+	##print(r)
 
 	i = 0
 	path = os.getcwd()
@@ -59,3 +106,4 @@ if __name__== "__main__":
 		f.write("\n")
 		i += 1
 	f.close()
+	# process_rx_in(path+'/rx_in.txt')

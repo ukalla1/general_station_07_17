@@ -299,6 +299,9 @@ module design_top_temp #(
         end
     end
     
+    
+    //statemachine
+    
     always @(posedge clk100M) begin
         if(rst) begin
             state <= idle;

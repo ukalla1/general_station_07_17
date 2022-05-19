@@ -40,6 +40,8 @@ module reg_b #(
     output reg [38:0] ram_do
     );
     
+    
+    //reg  bank begins
     (*keep = "true"*) reg [31:0] CLKOUT0_DIVIDE      = 12;         //0
     (*keep = "true"*) reg [31:0] CLKOUT0_PHASE       = 0;         //1
     (*keep = "true"*) reg [31:0] CLKOUT0_DUTY        = 50000;     //const
@@ -71,6 +73,8 @@ module reg_b #(
     (*keep = "true"*) reg [31:0] CLKOUT6_DUTY        = 50000;
     
     ///////////////////////////////
+    
+    //////reg bank ends
     
     (*keep = "true"*) reg [37:0] CLKFBOUT                  = 0;
     (*keep = "true"*) reg [37:0] CLKFBOUT_FRAC_CALC        = 0;
@@ -105,7 +109,7 @@ module reg_b #(
     
     //
     // RAM of:  39 bit word 32 words deep
-    (*keep = "true"*)(* rom_style = "distributed" *) reg [38:0]  ram [31:0];
+    (*keep = "true"*)(* ram_style = "distributed" *) reg [38:0]  ram [31:0];
     (*keep = "true"*) wire reg_wen;
 //    (*keep = "true"*) reg [5:0]   ram_addr;
 //    (*keep = "true"*) reg [38:0]  ram_do;

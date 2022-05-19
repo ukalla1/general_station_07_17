@@ -3,7 +3,31 @@ Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
 Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 8 for port 'LED_OUT' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v:93]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=5.0,CLK...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_1_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_1
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.buff_cal_wrapper
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav

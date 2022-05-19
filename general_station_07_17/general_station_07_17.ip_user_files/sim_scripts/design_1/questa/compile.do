@@ -14,9 +14,9 @@ vcom -work xpm -64 -93 \
 "/tools/Xilinx/Vivado/2018.3/data/ip/xpm/xpm_VCOMP.vhd" \
 
 vlog -work xil_defaultlib -64 "+incdir+../../../../general_station_07_17.srcs/sources_1/bd/design_1/ipshared/85a3" \
-"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
-"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
 "../../../bd/design_1/sim/design_1.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

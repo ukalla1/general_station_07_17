@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x8F800510176C35E9",
+      "boundary_crc": "0x8F800510FFC8D11E",
       "device": "xc7vx485tffg1761-2",
       "name": "design_1",
       "synth_flow_mode": "Hierarchical",
@@ -33,11 +33,11 @@
         "direction": "O",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "design_1_clk_wiz_0_0_clk_out1",
+            "value": "design_1_clk_wiz_0_1_clk_out1",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "20000000"
+            "value": "100000000"
           },
           "INSERT_VIP": {
             "value": "0",
@@ -53,25 +53,25 @@
     "components": {
       "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "design_1_clk_wiz_0_0",
+        "xci_name": "design_1_clk_wiz_0_1",
         "parameters": {
           "CLKIN1_JITTER_PS": {
             "value": "50.0"
           },
           "CLKOUT1_JITTER": {
-            "value": "155.788"
+            "value": "112.316"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "94.329"
+            "value": "89.971"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "20"
+            "value": "100"
           },
           "CLK_IN1_BOARD_INTERFACE": {
             "value": "sys_diff_clock"
           },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "4.250"
+            "value": "5.000"
           },
           "MMCM_CLKIN1_PERIOD": {
             "value": "5.000"
@@ -80,7 +80,7 @@
             "value": "10.0"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "42.500"
+            "value": "10.000"
           },
           "MMCM_DIVCLK_DIVIDE": {
             "value": "1"

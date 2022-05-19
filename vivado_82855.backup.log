@@ -1,0 +1,1982 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jan 14 08:33:52 2022
+# Process ID: 82855
+# Current directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
+# Command line: vivado
+# Log file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
+# Journal file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ukallakuri/hardware_design/designs/ARL_tmp/GS_SLAVE/general_station_07_17/general_station_07_17/general_station_07_17.srcs'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ukallakuri/hardware_design/designs/ARL_tmp/GS_MASTER/general_station_07_17/general_station_07_17/general_station_07_17.srcs'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 6405.707 ; gain = 139.895 ; free physical = 133 ; free virtual = 4630
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/mmcm_drp_rcf_0628.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmcm_drp_rcf_0628
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mmcme2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,...
+Compiling module xil_defaultlib.reg_b(CLKFBOUT_MULT=60,CLKFBOUT_...
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.mmcm_drp_rcf_0628(CLKFBOUT_MULT=...
+Compiling module xil_defaultlib.top_mmcme2
+Compiling module xil_defaultlib.debounce_logic_default
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/xsim.dir/design_top_temp_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri Jan 14 08:43:27 2022...
+run_program: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 6612.848 ; gain = 0.000 ; free physical = 352 ; free virtual = 4426
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_top_temp_tb_behav -key {Behavioral:sim_1:Functional:design_top_temp_tb} -tclbatch {design_top_temp_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -protoinst "protoinst_files/test_design_bd.protoinst" -protoinst "protoinst_files/test_clk_m.protoinst" -protoinst "protoinst_files/test_clk_s.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+source design_top_temp_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+mmcm_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 60 dc:     50000 phase:          0 ht:30 lt:30 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 075d
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 60.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000001110100011101:
+filter_lookup: 0010010000
+lock_lookup: 1111111111001111101011111010010000000001
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 12 dc:     50000 phase:          0 ht: 6 lt: 6 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 0145
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 12.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000000010100000101:
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_top_temp_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 6612.848 ; gain = 0.000 ; free physical = 243 ; free virtual = 4341
+run all
+run: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 6612.848 ; gain = 0.000 ; free physical = 248 ; free virtual = 4362
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/mmcm_drp_rcf_0628.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmcm_drp_rcf_0628
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mmcme2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,...
+Compiling module xil_defaultlib.reg_b(CLKFBOUT_MULT=60,CLKFBOUT_...
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.mmcm_drp_rcf_0628(CLKFBOUT_MULT=...
+Compiling module xil_defaultlib.top_mmcme2
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+mmcm_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 60 dc:     50000 phase:          0 ht:30 lt:30 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 075d
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 60.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000001110100011101:
+filter_lookup: 0010010000
+lock_lookup: 1111111111001111101011111010010000000001
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 12 dc:     50000 phase:          0 ht: 6 lt: 6 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 0145
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 12.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000000010100000101:
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+relaunch_sim: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 6703.535 ; gain = 0.000 ; free physical = 277 ; free virtual = 4318
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/mmcm_drp_rcf_0628.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmcm_drp_rcf_0628
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mmcme2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,...
+Compiling module xil_defaultlib.reg_b(CLKFBOUT_MULT=60,CLKFBOUT_...
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.mmcm_drp_rcf_0628(CLKFBOUT_MULT=...
+Compiling module xil_defaultlib.top_mmcme2
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+mmcm_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 60 dc:     50000 phase:          0 ht:30 lt:30 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 075d
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 60.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000001110100011101:
+filter_lookup: 0010010000
+lock_lookup: 1111111111001111101011111010010000000001
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 12 dc:     50000 phase:          0 ht: 6 lt: 6 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 0145
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 12.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000000010100000101:
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+relaunch_sim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 6703.535 ; gain = 0.000 ; free physical = 278 ; free virtual = 4296
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/mmcm_drp_rcf_0628.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmcm_drp_rcf_0628
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mmcme2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,...
+Compiling module xil_defaultlib.reg_b(CLKFBOUT_MULT=60,CLKFBOUT_...
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.mmcm_drp_rcf_0628(CLKFBOUT_MULT=...
+Compiling module xil_defaultlib.top_mmcme2
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+mmcm_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 60 dc:     50000 phase:          0 ht:30 lt:30 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 075d
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 60.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000001110100011101:
+filter_lookup: 0010010000
+lock_lookup: 1111111111001111101011111010010000000001
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 12 dc:     50000 phase:          0 ht: 6 lt: 6 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 0145
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 12.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000000010100000101:
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+relaunch_sim: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 6703.535 ; gain = 0.000 ; free physical = 300 ; free virtual = 4289
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/mmcm_drp_rcf_0628.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmcm_drp_rcf_0628
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/reg_b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reg_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top_mmcme2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_mmcme2
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=60.0,...
+Compiling module xil_defaultlib.reg_b(CLKFBOUT_MULT=60,CLKFBOUT_...
+Compiling module unisims_ver.FDRE_default
+Compiling module xil_defaultlib.mmcm_drp_rcf_0628(CLKFBOUT_MULT=...
+Compiling module xil_defaultlib.top_mmcme2
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+mmcm_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 60 dc:     50000 phase:          0 ht:30 lt:30 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:3c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00007800, precision: 00000001
+round_frac: 00007800
+mmcm_phase-divide: 60,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 075d
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 60.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000001110100011101:
+filter_lookup: 0010010000
+lock_lookup: 1111111111001111101011111010010000000001
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div: 12 dc:     50000 phase:          0 ht: 6 lt: 6 ed:0 nc:0 mx:0 dt: 0 pm:0
+mmcm_frac_count_calc- divide:0c, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+round_frac - decimal: 00001800, precision: 00000001
+round_frac: 00001800
+mmcm_phase-divide: 12,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+DADDR Reg1 0145
+DADDR Reg2 0800
+DADDR Reg Shared 30
+- 12.   0 p          0>>  :DADDR_9_15 frac30to28.frac_en.wf_r_frac.dt:000          10_00000000:DADDR_7_13 pm_f_frac_filtered_29to27.wf_f_frac_26:000000000:DADDR_8_14.pm_r_frac_filt_15to13.ht_frac.lt_frac:000000000000010100000101:
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+mmcm_count_calc- divide:01, phase:          0, duty_cycle:     50000
+duty_cycle_fix: 00000200
+mmcm_phase-divide:  1,phase:          0
+phase_in_cycles: 00000000
+round_frac - decimal: 00000000, precision: 00000003
+round_frac: 00000000
+temp: 00000000
+div:  1 dc:     50000 phase:          0 ht: 1 lt: 1 ed:0 nc:1 mx:0 dt: 0 pm:0
+relaunch_sim: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 6754.566 ; gain = 0.000 ; free physical = 357 ; free virtual = 4364
+run all
+update_compile_order -fileset sources_1
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 6768.867 ; gain = 0.000 ; free physical = 411 ; free virtual = 4449
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 6768.867 ; gain = 0.000 ; free physical = 407 ; free virtual = 4443
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 6768.867 ; gain = 0.000 ; free physical = 403 ; free virtual = 4440
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+run all
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+run all
+open_bd_design {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Successfully read diagram <design_1> from BD file </home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+open_bd_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 7068.105 ; gain = 299.238 ; free physical = 139 ; free virtual = 4103
+startgroup
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {100} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {5.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {10.000} CONFIG.CLKOUT1_JITTER {112.316} CONFIG.CLKOUT1_PHASE_ERROR {89.971}] [get_bd_cells clk_wiz_0]
+endgroup
+set_property -dict [list CONFIG.FREQ_HZ {100000000}] [get_bd_ports clk_out1_0]
+save_bd_design
+Wrote  : </home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd> 
+close_bd_design [get_bd_designs design_1]
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'PRIM_IN_FREQ' from '200.000' to '100.000' has been ignored for IP 'clk_wiz_0'
+Wrote  : </home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd> 
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_1_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=4.25,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 7255.305 ; gain = 25.094 ; free physical = 241 ; free virtual = 3957
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 7255.305 ; gain = 40.504 ; free physical = 227 ; free virtual = 3948
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_bd_design {/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd}
+Adding cell -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Successfully read diagram <design_1> from BD file </home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd>
+close_bd_design [get_bd_designs design_1]
+generate_target Simulation [get_files /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/sim_scripts -ip_user_files_dir /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files -ipstatic_source_dir /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/modelsim} {questa=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/questa} {ies=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/ies} {xcelium=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/xcelium} {vcs=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/vcs} {riviera=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_1_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=5.0,CLK...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_1_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_1
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_top_temp_tb_behav -key {Behavioral:sim_1:Functional:design_top_temp_tb} -tclbatch {design_top_temp_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -protoinst "protoinst_files/test_design_bd.protoinst" -protoinst "protoinst_files/test_clk_m.protoinst" -protoinst "protoinst_files/test_clk_s.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+source design_top_temp_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_top_temp_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 7397.055 ; gain = 55.191 ; free physical = 222 ; free virtual = 3712
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_1_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=5.0,CLK...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_1_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_1
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 7475.199 ; gain = 44.215 ; free physical = 337 ; free virtual = 3583
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 7475.199 ; gain = 78.145 ; free physical = 333 ; free virtual = 3580
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd]
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd] -directory /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/sim_scripts -ip_user_files_dir /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files -ipstatic_source_dir /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/modelsim} {questa=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/questa} {ies=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/ies} {xcelium=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/xcelium} {vcs=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/vcs} {riviera=/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+WARNING: [Runs 36-53] Possible issues detected after target generation. Generation state is unexpected for target 'Simulation'. Expected 'Generated', got 'Stale' for source '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [Vivado 12-5682] Launching behavioral simulation in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/tools/Xilinx/Vivado/2018.3/data/xsim/xsim.ini' copied to run dir:'/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'design_top_temp_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_m.bd'
+INFO: [SIM-utils-43] Exported '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim/test_clk_s.bd'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+xvlog --incr --relax -prj design_top_temp_tb_vlog.prj
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_1_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_1/design_1_clk_wiz_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_clk_wiz_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/buff_cal_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module buff_cal_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/cntr_tst.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cntr_tst
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/debounce_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/design_top_temp.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_rx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_rx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_m.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_m
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/manchester_tx_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module manchester_tx_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/sp_ram_sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sp_ram_sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_tx_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/uart_txm_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_txm_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sim_1/new/design_top_temp_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_top_temp_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto a34d704084c54797a22dc952e5919eb5 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_top_temp_tb_behav xil_defaultlib.design_top_temp_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'clk20M' [/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.srcs/sources_1/new/top.v:169]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUFDS
+Compiling module unisims_ver.MMCME2_ADV(CLKIN1_PERIOD=5.0,CLK...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_1_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_1
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.debounce_logic(clock_frequency=1...
+Compiling module xil_defaultlib.cntr_tst
+Compiling module xil_defaultlib.manchester_tx_m
+Compiling module xil_defaultlib.manchester_tx_top
+Compiling module xil_defaultlib.sp_ram_sim
+Compiling module xil_defaultlib.buff_cal_wrapper
+Compiling module xil_defaultlib.manchester_rx_m_default
+Compiling module xil_defaultlib.manchester_rx_top
+Compiling module xil_defaultlib.uart_txm_ex(BITCOUNTMAX=8,SAMPLE...
+Compiling module xil_defaultlib.uart_tx_wrapper(BITCOUNTMAX=8,SA...
+Compiling module xil_defaultlib.design_top_temp_default
+Compiling module unisims_ver.ODDR
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.design_top_temp_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_top_temp_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "design_top_temp_tb_behav -key {Behavioral:sim_1:Functional:design_top_temp_tb} -tclbatch {design_top_temp_tb.tcl} -protoinst "protoinst_files/design_1.protoinst" -protoinst "protoinst_files/test_design_bd.protoinst" -protoinst "protoinst_files/test_clk_m.protoinst" -protoinst "protoinst_files/test_clk_s.protoinst" -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/design_1.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_design_bd.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_design_bd.protoinst for the following reason(s):
+There are no instances of module "test_design_bd" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_m.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_m.protoinst for the following reason(s):
+There are no instances of module "test_clk_m" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/test_clk_s.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/test_clk_s.protoinst for the following reason(s):
+There are no instances of module "test_clk_s" in the design.
+
+Time resolution is 1 ps
+source design_top_temp_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'design_top_temp_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 7585.184 ; gain = 34.281 ; free physical = 220 ; free virtual = 3343
+run all
