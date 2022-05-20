@@ -1,0 +1,3 @@
+This folder contains 2 projects. Both of them attempting to test the axi_iic ip in the xilinx vivado application
+1. ai_i2c_new_sim : has the project that tests the ip as is (i.e no wrapper for the ip). The testbench comes with a i2c slave design to complement the master in the ip.
+2. axi_iic_0_ex : is an example design by xilinx to using the axi_iic ip.  The testbench in this project does not have a slave but the is in fact modeled to generate the necessary signals for us to test the masters' functions.

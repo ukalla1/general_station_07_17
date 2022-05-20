@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu May 12 08:41:33 2022
+# Process ID: 9000
+# Current directory: c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_iic_0_ex
+# Command line: vivado.exe -notrace -source c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_i2c_new_sim/project_1.srcs/sources_1/ip/axi_iic_0/axi_iic_0_ex.tcl
+# Log file: c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_iic_0_ex/vivado.log
+# Journal file: c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_iic_0_ex\vivado.jou
+#-----------------------------------------------------------
+start_gui
+source c:/work/research/FSOTT/general_station_07_17/axi_i2c_new_sim/axi_i2c_new_sim/project_1.srcs/sources_1/ip/axi_iic_0/axi_iic_0_ex.tcl -notrace
+update_compile_order -fileset sources_1
+launch_simulation
+source axi_iic_0_exdes_tb.tcl
+run all
+run all
+run all
