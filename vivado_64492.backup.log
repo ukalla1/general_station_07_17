@@ -2,14 +2,22 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Sep  4 11:48:08 2022
-# Process ID: 40115
+# Start of session at: Thu May 19 08:48:18 2022
+# Process ID: 64492
 # Current directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
 # Command line: vivado
 # Log file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
 # Journal file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.jou
 #-----------------------------------------------------------
 start_gui
+open_project /home/ukallakuri/hardware_design/designs/ARL_project/from_arl/PULSE-1.0/FPGA/vivado/vivadoproj.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
+INFO: [Common 17-344] 'open_project' was cancelled
 open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr
 Scanning sources...
 Finished scanning sources
@@ -38,8 +46,7 @@ WARNING: [IP_Flow 19-3664] IP 'test_design_bd_top_slave_0_0' generated file not 
 ERROR: [IP_Flow 19-993] Could not find IP file for IP 'design_1_clk_wiz_0_0'.
 CRITICAL WARNING: [IP_Flow 19-5097] Unable to determine VLNV from IP file; verify it has the correct syntax: 
 CRITICAL WARNING: [IP_Flow 19-3577] Failed to recreate IP instance 'test_design_bd_top_slave_0_0'. Error during subcore creation.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 6433.418 ; gain = 163.156 ; free physical = 138 ; free virtual = 6777
 ERROR: [Common 17-39] 'open_project' failed due to earlier errors.
 update_compile_order -fileset sources_1
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Sep  4 11:49:23 2022...
+INFO: [Common 17-206] Exiting Vivado at Thu May 19 08:49:26 2022...
