@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Sep  4 11:23:18 2022
-# Process ID: 5994
+# Start of session at: Sat Jun 11 11:55:06 2022
+# Process ID: 6129
 # Current directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
 # Command line: vivado
 # Log file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
@@ -11,4 +11,5 @@
 #-----------------------------------------------------------
 start_gui
 open_project /home/ukallakuri/hardware_design/designs/ARL_phase3/general_station_07_17/general_station_07_17.xpr
+update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1

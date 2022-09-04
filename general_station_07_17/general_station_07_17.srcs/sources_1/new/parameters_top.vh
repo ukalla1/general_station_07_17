@@ -4,7 +4,7 @@
 `ifndef CONSTANTS
     `define CONSTANTS
     
-//    `define MASTER
+    `define MASTER
     
     `ifndef MASTER
         `define SLAVE

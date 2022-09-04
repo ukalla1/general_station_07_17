@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun Sep  4 11:23:18 2022
-# Process ID: 5994
+# Start of session at: Wed Aug 11 15:19:13 2021
+# Process ID: 166626
 # Current directory: /home/ukallakuri/hardware_design/designs/ARL_phase3
 # Command line: vivado
 # Log file: /home/ukallakuri/hardware_design/designs/ARL_phase3/vivado.log
@@ -17,7 +17,5 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ukallakuri/hardware_design/designs/ARL_tmp/GS_SLAVE/general_station_07_17/general_station_07_17/general_station_07_17.srcs'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/ukallakuri/hardware_design/designs/ARL_tmp/GS_MASTER/general_station_07_17/general_station_07_17/general_station_07_17.srcs'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2018.3/data/ip'.
-open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 6412.988 ; gain = 142.875 ; free physical = 3569 ; free virtual = 7779
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:07 . Memory (MB): peak = 6416.793 ; gain = 162.301 ; free physical = 570 ; free virtual = 3993
 update_compile_order -fileset sources_1
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Sep  4 11:27:34 2022...

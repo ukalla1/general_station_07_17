@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu Aug 26 14:09:08 2021">
+<application name="pa" timeStamp="Sun Sep  4 11:27:32 2022">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="273e3bfac83d42868edcf46131de2294" type="ProjectID"/>
 <property name="ProjectIteration" value="124" type="ProjectIteration"/>
@@ -93,7 +93,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="CreateSrcFileDialog_FILE_NAME" value="23" type="GuiHandlerData"/>
 <property name="CreateSrcFileDialog_FILE_TYPE" value="3" type="GuiHandlerData"/>
 <property name="ExpReportsView_REMOVE_REPORT" value="1" type="GuiHandlerData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="776" type="GuiHandlerData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="783" type="GuiHandlerData"/>
 <property name="FloatingTopDialog_SELECT_TOP_MODULE_OF_YOUR_DESIGN" value="2" type="GuiHandlerData"/>
 <property name="FloatingTopDialog_SPECIFY_NEW_TOP_MODULE" value="1" type="GuiHandlerData"/>
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="559" type="GuiHandlerData"/>
@@ -187,7 +187,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_REFRESH_HIERARCHY" value="1" type="GuiHandlerData"/>
 <property name="StaleRunDialog_YES" value="1" type="GuiHandlerData"/>
 <property name="StateMonitor_RESET_RUN" value="2" type="GuiHandlerData"/>
-<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="33" type="GuiHandlerData"/>
+<property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="34" type="GuiHandlerData"/>
 <property name="SyntheticaStateMonitor_CANCEL" value="4" type="GuiHandlerData"/>
 <property name="SystemBuilderMenu_ADD_MODULE" value="5" type="GuiHandlerData"/>
 <property name="SystemBuilderMenu_IP_DOCUMENTATION" value="4" type="GuiHandlerData"/>
@@ -205,9 +205,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="XPowerSettingsDialog_TABBED_PANE" value="12" type="GuiHandlerData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="398" type="GuiMode"/>
+<property name="GuiMode" value="492" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="194" type="TclMode"/>
+<property name="TclMode" value="235" type="TclMode"/>
 </item>
 </section>
 </application>
